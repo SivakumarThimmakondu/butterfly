@@ -302,6 +302,12 @@ return [
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
         'Temando_Shipping' => 1,
+        'Tigren_Ajaxsuite' => 1,
+        'Tigren_Ajaxcompare' => 1,
+        'Tigren_Ajaxlogin' => 1,
+        'Tigren_Ajaxcart' => 1,
+        'Tigren_Ajaxwishlist' => 1,
+        'Tigren_Core' => 1,
         'Vertex_Tax' => 1
     ]
 ];
