@@ -1,0 +1,117 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+ -->
+
+<div class="block-authentication"
+     data-bind="afterRender: setModalElement, blockLoader: isLoading"
+     style="display: none">
+
+
+   <div class="block block-customer-login butterfly-signup"
+         data-bind="attr: {'data-label': $t('or')}">
+       
+        <div class="home-cus-sign-in-title">                  
+                     <h3 class="home-customer-title">Already Have An Account</h3>                  
+                     <h4 class="home-customer-small-head">Sign In To Track Your Order, Use Wishlist & More. </h4>         
+                  </div>
+        <!-- ko foreach: getRegion('messages') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!--/ko-->
+        <!-- ko foreach: getRegion('before') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!-- /ko -->
+
+        <div class="block-content" aria-labelledby="block-customer-login-heading">
+            <form class="form form-login text-center butterfly-signup-form"
+                  method="post"
+                  data-bind="event: {submit: login }"
+                  id="login-form">
+
+                <div class="login" data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+                    <div class="email required but-home-login">                       
+                        <div class="form-group">
+                            <input name="email"
+                                   id="customer-email"
+                                   type="email"
+                                   class="input-text"
+                                   data-mage-init='{"mage/trim-input":{}}'
+                                   data-bind="attr: {autocomplete: autocomplete}"
+                                   data-validate="{required:true, 'validate-email':true}">
+                                  <label class="label" for="customer-email" data-bind="i18n: 'Enter Your Email'"></label>
+                        </div>
+                    </div>
+                    <div class="password required but-home-login">                        
+                        <div class="form-group">
+                            <input name="password"
+                                   type="password"
+                                   class="input-text"
+                                   id="pass signin-password"
+                                   data-bind="attr: {autocomplete: autocomplete}"
+                                   data-validate="{required:true}">
+                                   <label for="pass" class="label" data-bind="i18n: 'Enter Your Password'"></label>
+                        </div>
+                    </div>
+
+                    <div class="butter-home-login-remember">                      
+                      <input class="form-check-input css-checkbox" type="checkbox" id="keep-me" value="">
+                      <label for="keep-me">Keep Me Signed In</label>                      
+                  </div>
+
+                    <!-- ko foreach: getRegion('additional-login-form-fields') -->
+                    <!-- ko template: getTemplate() --><!-- /ko -->
+                    <!-- /ko -->
+                     <button type="submit" class="action action-login secondary btn btn-block waves-effect z-depth-0 btn-sign-in" name="send" id="send2">
+                                <span data-bind="i18n: 'Sign In'"></span>
+                            </button>
+                      
+                       <div class="forgt-pass">
+                            <a class="action" data-bind="attr: {href: forgotPasswordUrl}">
+                                <span data-bind="i18n: 'Forgot Your Password?'"></span>
+                            </a>
+                        </div>
+
+                    <div class="actions-toolbar">
+                        <input name="context" type="hidden" value="checkout" /> 
+
+                    </div>
+                </div>
+
+                 <div class="cus-social-login-btn-wrapper">
+                 
+                  <a class="custom-social-button-face" href="#!"><img src="<?php echo 7
+
+$this->getViewFileUrl('Butterfly_Mssr::images/facebook-login-small.jpg'); ?>" /><span>Facebook</span></a>
+                  
+                  <a class="custom-social-button-face" href="#!"><img src="<?php echo $this->getViewFileUrl('images/google-login-small.jpg'); ?>" /><span>Google</span></a>
+
+                 </div>
+                  
+                 <div class="cus-home-reg">
+                 
+                  <span class="cus-home-reg-not-yet-member" id="Reg-now">Not a member yet ? Sign Up Now</span>
+                 
+                 </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="block-signupauthentication"
+     data-bind="afterRender: setModalElement, blockLoader: isLoading"
+     style="display: none">
+
+
+   <div class="block block-customer-login butterfly-signup"
+         data-bind="attr: {'data-label': $t('or')}">
+       
+        <div class="home-cus-sign-in-title">                  
+                     <h3 class="home-customer-title">Already Have An Account</h3>                  
+                     <h4 class="home-customer-small-head">Sign In To Track Your Order, Use Wishlist & More. </h4>         
+                  </div>
+
+                </div></div>

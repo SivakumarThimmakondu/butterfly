@@ -1,0 +1,1599 @@
+ .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  
+  .page-footer {
+    background: #1c2128;	
+}
+
+h5.footer-title {
+    color: #ffffff;
+	font-family: 'LG Smart', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+  
+.footer-text-content {
+  color: #8a8f97;
+  font-family: 'LG Smart', sans-serif;
+  font-size: 16px;
+  }
+  
+ .footer-list-item a{
+	 color: #8a8f97;
+	font-family: 'LG Smart', sans-serif;
+	text-decoration:none;
+	line-height: 2;
+	font-size:16px;
+ }
+ 
+ .footer-about-address{
+	 color: #8a8f97;
+	font-family: 'LG Smart', sans-serif;
+ }
+ 
+.phone-number {
+    margin-left: 10px;
+	color: #8a8f97;
+    font-family: 'LG Smart', sans-serif;
+	font-size:16px;
+} 
+
+.address-text {    
+	color: #8a8f97;
+    font-family: 'LG Smart', sans-serif;
+}
+
+.footer-location-image{
+    
+}
+
+.mobile-number{
+	margin-left: 19px;
+	color: #8a8f97;
+    font-family: 'LG Smart', sans-serif;
+	font-size:16px;
+	vertical-align:bottom;
+}
+
+.footer-copyright {
+    color: #ffffff;
+	font-family: 'LG Smart', sans-serif;
+}
+ 
+ .footer-copyright a{
+	color: #ffffff;
+	font-family: 'LG Smart', sans-serif;
+	text-decoration:none;	
+	font-size:16px;
+ }
+ 
+ 
+ .footer-text-1 {
+    margin-bottom: -18px;
+	color:#969FAA;
+	font-family: 'LG Smart', sans-serif;
+	font-size:16px;
+}
+
+.footer-text{
+	color:#969FAA;
+	font-family: 'LG Smart', sans-serif;
+	margin-left: 55px;
+    margin-bottom: 0px;
+	font-size:16px;
+	line-height: 1;
+}
+ 
+ .footer-add-image {
+    padding-right: 20px;
+}
+ 
+ .footer-mob-image {
+    margin-left: 8px;
+}
+
+.footer-list-item {
+    text-transform: uppercase;
+}
+
+.footer-phone-text{
+	margin-bottom:0px;
+}
+
+
+.footer-add-image img {
+    padding-top: 12px;
+}
+
+
+.subscribe-area {
+background:#282e37;
+margin-top: -23px;
+padding-top:20px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.subscribe-text span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.subscribe-text h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 9px;
+    font-family: 'LG Smart', sans-serif;
+    text-transform: capitalize;
+    float: right;
+}
+.subscribe-wrapper {
+    overflow: hidden;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.subscribe2-wrapper .subscribe-form input {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    height: 45px;
+    margin-right: 9px;
+    padding-left: 35px;
+    width: 64%;
+    font-family: 'LG Smart', sans-serif;
+}
+ 
+.subscribe2-wrapper .subscribe-form button {
+    width: 150px;
+    height: 45px;
+    background: #1daeea;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    /* padding: 18px 71px; */
+    transition: all 0.3s ease 0s;
+    font-family: 'LG Smart', sans-serif;
+    text-transform: uppercase;
+}
+.subscribe2-wrapper .subscribe-form button i {
+    font-size: 18px;
+    padding-left: 5px;
+	font-family: 'LG Smart', sans-serif;
+}
+
+
+.social_footer_ul { display:table;  list-style-type:none; margin: 0px 15px 0px -86px; }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#282e37; border:1px solid #fff; padding:8px;border-radius:50%;background: #ffffff;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+.social_footer_ul i.fab{font-size:18px;}
+
+.footer-column { margin-top: 50px; }
+
+.footer-column-logo {    margin-left: 26px; }
+
+
+.butterfly_header_one:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.butter_column_one{
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
+
+.responsive-banner-image{
+	width:100%;
+}
+
+.butterfly_header {
+    background: transparent;
+    z-index: 999;
+    position: absolute;
+	width:100%;
+	margin-top:12px;
+}
+
+
+.util-left {
+    float: left;
+}
+
+.util-right {
+    float: right;
+}
+
+.util-left p {
+    margin: 5px 20px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+.util-right .butter_header_search input[type=search] {  
+    padding: 6px;   
+    margin-top: 8px;
+    margin-right: -45px;
+    font-size: 17px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    padding-left: 25px;
+    width: 295px;
+	color: #fff;
+	font-family: 'LG Smart', sans-serif;
+}
+
+.butter_header_search [type=submit] {
+    background: transparent;
+    border: none;
+}
+
+.util-right .butter_header_search input[type=search]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+  text-transform:uppercase;
+  font-family: 'LG Smart', sans-serif;
+}
+
+.subscribe2-wrapper .subscribe-form input[type=email]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #686868;  
+  font-family: 'LG Smart', sans-serif;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: LG Smart Light;
+  src: url(fonts/lg_smart_light-webfont.ttf);
+}
+
+@font-face {
+  font-family: LG Smart Regular;
+  src: url(fonts/lg_smart_regular-webfont.ttf);
+}
+
+@font-face {
+  font-family: LG Smart Bold;
+  src: url(fonts/lg_smart_bold-webfont.ttf);
+}
+
+@font-face {
+  font-family: LG Smart Semibold;
+  src: url(fonts/lg_smart_semibold-webfont.ttf);
+}
+
+
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.butterfly-carousel-indicators-home-banner li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 70px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+
+.butterfly-carousel-indicators-home-banner {
+    position: absolute;
+    /* right: 0; */
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 52%;
+    margin-left: 7%;
+    list-style: none;
+}
+
+
+a.banner-button-1 {
+    background: #fff;
+    padding: 10px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+	margin-right: 15px;
+	font-family: 'LG Smart', sans-serif;
+}
+
+a.banner-button-2 {
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+	font-family: 'LG Smart', sans-serif;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 30px;
+    left: 45%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.butterfly-carousel-indicators-homebody-banner li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 70px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+
+.butterfly-carousel-indicators-homebody-banner {
+    position: absolute;
+    /* right: 0; */
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 5%;
+    margin-left: 53%;
+    list-style: none;
+}
+
+.butterfly-homepage-carousel-caption{
+	position: absolute;
+    right: 66%;
+    bottom: 60px;
+    left: 0%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;	
+}
+
+
+.butterfly-carousel-indicators-homebody-banner-abovefooter li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 70px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+
+.butterfly-carousel-indicators-home-banner-abovefooter {
+    position: absolute;
+    /* right: 0; */
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 52%;
+    margin-left: 7%;
+    list-style: none;
+}
+
+.butterfly-homepage-carousel-caption-abovefooter {
+    position: absolute;
+    right: 0%;
+    bottom: 30px;
+    left: 45%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+.butter_header_search [type=submit] img {
+    position: relative;
+    top: -2px;
+    bottom: 0px;
+    left: -11px;
+}
+
+.util-right ul.util-right-icons li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+	cursor:pointer;
+}
+
+.util-right-icons {
+    margin: 5px 4px;
+    display: inline-block;
+}
+
+.util-right .butter_header_search {
+    display: inline-block;
+}
+
+
+.butterfly-body-content-banner-abovefooter {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+
+
+/*Login Or Register Account*/
+
+/*define the modal’s background*/ 
+	
+	.modal-registration { 
+		display: block; 
+		position: fixed; 
+		z-index: 999; 
+		left: 0; 
+		top: 0; 
+		width: 100%; 
+		height: 100%; 
+		overflow: auto; 
+		background-color: rgb(0, 0, 0); 
+		background-color: rgba(0, 0, 0, 0.4); 
+		padding-top: 60px; 
+	} 
+	/*define the modal-content background*/ 
+	
+	.modal-content { 
+		background-color: #fefefe; 
+		margin: 5% auto 15% auto; 
+		border: 1px solid #888; 
+		width: 80%; 
+	} 
+	
+	/*define the close button*/ 
+	
+	.close {
+			position: absolute;
+			right: 433px;
+			top: 59px;
+			color: #000;
+			font-size: 26px;
+			font-weight: bold;
+			opacity: 1;
+			z-index: 1;
+		}
+	/*define the close hover and focus effects*/ 
+	
+	.close:hover, 
+	.close:focus { 
+		color: #000; 
+		cursor: pointer; 
+	} 
+	
+	/*add full-width input fields*/ 
+	input[type=text], 
+	input[type=password] { 
+		width: 100%; 
+		padding: 12px 20px; 
+		margin: 8px 0; 
+		display: inline-block; 
+		border: 2px solid #ccc; 
+		box-sizing: border-box; 
+	} 
+
+
+/* Create two unequal columns that floats next to each other */
+
+.row {
+  display: flex;
+}
+
+.column-login {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column-right-login {
+  width: 50%;
+}
+
+.column-left-registration {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.register{
+    background: #fff;
+    margin-top: 0%;
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/*.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}*/
+
+.register-right{
+    /*background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%; */
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+     padding: 10%;
+    /* margin-top: 10%; */
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+
+.btnRegister{    
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #479cf7;
+    color: #fff;
+    font-weight: 600;
+    width: 34%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btnRegister:hover {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #499cf58f;
+    color: #fff;
+    font-weight: 600;
+    width: 34%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #fff;
+    border-radius: 0rem;
+    width: 100%;
+    float: right;
+    border-bottom: 1px solid #479cf7;
+}
+.register .nav-tabs .nav-link{
+    padding: 0%;
+    height: 34px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'LG Smart', sans-serif;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+   /* width: 100px; */
+    color: #479cf7;
+    text-transform: uppercase;
+    background: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'LG Smart', sans-serif;
+    height: 29px;
+    padding: 0%;
+    border-right: 1px solid #d4d6d4;
+}
+
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+
+
+h3.customer-headeing {
+    font-family: 'LG Smart', sans-serif;
+    margin-bottom: 0px;
+	color: #000;
+    font-weight: 700;
+}
+
+h4.customer-reg-disc {
+    font-family: 'LG Smart',sans-serif;
+    font-size: 18px;
+    color: #7eb6f3;
+}
+
+h3.off-sav-customer {
+    font-size: 22px;
+    color: #8ba54f;
+    font-family: 'LG Smart', sans-serif;
+}
+
+span.off-cashback-cus {
+    font-family: 'LG Smart';
+    font-weight: 600;
+    font-size: 18px;
+	margin-left: 5px;
+}
+
+.customer-reg-sav {
+    display: -webkit-inline-box;
+    display: inline-flex;
+}
+
+
+.nav-tabs .nav-link {
+    border: 0px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+/*.register-form input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 22px 20px;
+    margin: 0px 0;
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+*/
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+     border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.register-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+  font-weight:600;
+}
+.register-form input::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  font-weight:600;
+}
+.register-form input:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+  font-weight:600;
+}
+.register-form input:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+  font-weight:600;
+}
+
+
+.cus-reg-sect-title {   
+    /* margin-left: 33px; */
+}
+
+.form-terms-conditons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+/*form styles*/
+#msform {
+width: 400px;
+margin: 50px auto;
+text-align: center;
+position: relative;
+}
+#msform fieldset {
+/*background: white;
+border: 0 none;
+border-radius: 3px;
+box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+padding: 20px 30px;
+box-sizing: border-box; */
+width: 80%;
+margin: 0 10%;
+/*stacking fieldsets above each other*/
+position: absolute;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+padding: 15px;
+border: 1px solid #ccc;
+border-radius: 3px;
+margin-bottom: 10px;
+width: 100%;
+box-sizing: border-box;
+font-family: montserrat;
+color: #2C3E50;
+font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+width: 100px;
+background: #27AE60;
+font-weight: bold;
+color: white;
+border: 0 none;
+border-radius: 1px;
+cursor: pointer;
+padding: 10px 5px;
+margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+font-size: 15px;
+text-transform: uppercase;
+color: #2C3E50;
+margin-bottom: 10px;
+}
+.fs-subtitle {
+font-weight: normal;
+font-size: 13px;
+color: #666;
+margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+margin-bottom: 30px;
+overflow: hidden;
+/*CSS counters to number the steps*/
+counter-reset: step;
+}
+#progressbar li {
+list-style-type: none;
+color: white;
+text-transform: uppercase;
+font-size: 9px;
+width: 33.33%;
+float: left;
+position: relative;
+}
+#progressbar li:before {
+content: counter(step);
+counter-increment: step;
+width: 20px;
+line-height: 20px;
+display: block;
+font-size: 10px;
+color: #333;
+background: white;
+border-radius: 3px;
+margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+content: '';
+width: 100%;
+height: 2px;
+background: white;
+position: absolute;
+left: -50%;
+top: 9px;
+z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+/*connector not needed before the first step*/
+content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after {
+background: #27AE60;
+color: white;
+}
+
+
+
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 50%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+/*Signup registration form*/
+
+.btn-sign-in {
+    background: #B7C626 !important;
+    border: 1px solid #B7C626 !important;
+    color: #fff !important;
+    font-weight: 600;
+	border-radius: 1px;
+	font-family: 'LG Smart', sans-serif;
+	font-size: 18px;
+    text-transform: uppercase;
+}
+
+.btn-sign-in:hover {
+    background-color: #929e1e !important;
+	border: 1px solid #929e1e !important;
+    color: #fff !important;
+    font-weight: 600;
+	border-radius: 1px;
+	font-family: 'LG Smart', sans-serif;
+	font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+:root {
+	--main-color: #ee6e73;
+	--second-color: #333;
+	--input-color: #596988;
+}
+
+.butterfly-signup-form {
+	padding: 0px 40px;
+}
+
+.butterfly-signup-form h1 {
+	color: var(--second-color);
+	letter-spacing: 1px;
+	margin: 10px 0px;
+}
+
+.butterfly-signup .form-group {
+	position: relative;
+	padding: 20px 0;
+	/* width: 350px; */
+	max-width: 100%;
+	margin-bottom:5px;
+}
+
+.butterfly-signup .form-group input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid var(--input-color);
+	color: var(--second-color);
+	font-size: 14px;	
+	display: block;
+	width: 100%;
+	padding-left: 0px;
+        padding-bottom: 2px;
+    padding-top: 25px;
+    padding-right: 0px;
+}
+
+.butterfly-signup .form-group label {
+	/* color: var(--input-color); */
+	color : #010101;
+	font-size: 14px;
+	font-weight: 600;
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	transform: translateY(30px);
+	transition: all 0.2s ease-in-out;
+	left: 0px;
+}
+
+
+.butterfly-signup .form-group input:focus {	
+	border-bottom-color: var(--main-color);
+	outline: none;
+	padding-left: 0px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-right: 0px;
+}
+
+.butterfly-signup .form-group input:valid + label,
+.butterfly-signup .form-group input:focus + label {
+	color : #010101;
+	font-size: 14px;
+	transform: translateY(20px);
+}
+
+.butter-home-login-remember input[type=checkbox]+ label {
+	color : #010101;
+	font-size: 14px;
+	font-weight:600;
+}
+
+.butter-home-login-remember input[type=checkbox]{
+	display: none;
+}
+
+/* Checkbox Icons */
+.butter-home-login-remember label {
+    position: relative;
+    padding-left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+    padding: 9px 28px 0 0;
+}
+ 
+.butter-home-login-remember label:before,.butter-home-login-remember label:after {
+    font-family: FontAwesome;
+    font-size: 28px;
+    position: absolute;
+    top: 0;
+    left: -31px;
+    right: 10px;
+    font-weight: 100;
+}
+
+.butter-home-login-remember label:before {
+    content: '\f096'; /*checkbox unchecked */
+}
+
+.butter-home-login-remember label:after {
+    content: '\f00c';
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0.5;
+    font-size: 19px;
+    top: 7px;
+    left: -29px;
+    color: #1d3b48;
+    -webkit-transition: all 0.50s;
+    -moz-transition: all 0.50s;
+    -o-transition: all 0.50s;
+    transition: all 0.50s;
+}
+
+/* Animating the Checkbox Icon */
+.butter-home-login-remember input[type="checkbox"]:checked + label:after {
+    max-width: 25px;
+    opacity: 1;
+    margin-right: 90px;
+}
+
+
+.butterfly-signup input[type="button"] {
+	background-color: var(--main-color);
+	border: 2px solid var(--main-color);
+	border-radius: 2px;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 15px 0;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.butterfly-signup input[type="button"]:hover {
+	background-color: #fff;
+	color: var(--main-color);
+}
+
+.butterfly-signup input[type="button"]:active {
+	border-color: #fff;
+}
+
+.butterfly-signup input[type="button"]:focus {
+	outline: none;
+}
+
+
+.butterfly-signup .forgt-pass{
+	text-align:left;
+	margin-top:10px;
+}
+
+.butterfly-signup .forgt-pass a,.butterfly-signup .forgt-pass a:hover{
+	color: #f16521;
+	text-decoration:none;
+}
+
+.butterfly-signup .cus-social-login-wrapper {
+    text-align: center;
+}
+
+.butterfly-signup .cus-social-log-tit{
+	color: #6b7d85;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    margin-bottom: 12px;
+}	
+	
+.butterfly-signup a.custom-social-button-face, .butterfly-signup a.custom-social-button-face:hover {
+    width: 148px;
+    background-color: #ececec;
+    border: 0;
+    display: inline-block;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 8px 0;
+    color: #707881;
+    font-size: 18px;
+    font-family: "LG Smart", sans-serif;
+	text-decoration:none;
+}
+
+.butterfly-signup a.custom-social-button-face img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.cus-social-login-btn-wrapper {
+    margin-top: 20px;
+	text-align:center;
+}
+
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -35px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.butterfly-home-registration .butt-registration-row {
+    margin-bottom: 20px;
+}
+
+.register-left {
+    width: 602px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    border-right: solid 1px #dbdbdb;
+	background: #fff;
+}
+
+.home-cus-sign-in-title h3.home-customer-title {
+    font-family: "LG Smart", sans-serif;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+	color:#000;
+}
+
+.home-cus-sign-in-title h4.home-customer-small-head {
+    font-family: "LG Smart", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+	color:#000;
+}
+
+.butter-home-login-remember {
+    text-align: left;
+    padding-left: 31px;
+    margin-bottom: 15px;
+	margin-top:10px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+.butterfly-signup a.custom-social-button-face, .butterfly-signup a.custom-social-button-face:hover{
+	width: 101px;
+}
+}
+
+.but-home-login {
+    margin-bottom: -33px;
+}
+
+
+/* The container */
+.butter-home-reg-radio .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.butter-home-reg-radio .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #cecece;
+}
+
+/* On mouse-over, add a grey background color */
+.butter-home-reg-radio .container:hover input ~ .checkmark {
+  background-color: #fff;
+  border: 1px solid #cecece;
+}
+
+/* When the radio button is checked, add a blue background */
+.butter-home-reg-radio .container input:checked ~ .checkmark {
+  background-color: #b7c626;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.butter-home-reg-radio .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.butter-home-reg-radio .container .checkmark:after {
+ 	top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+.butter-home-reg-radio {
+    display: inline-flex;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+
+
+.errorMsg {
+   display:none;        
+   color:#26b2ed;
+}
+
+.cus-home-reg {
+    margin-top: 20px;
+	text-align:center;
+}
+
+span.cus-home-reg-not-yet-member {
+    color: #000;
+    font-family: "LG Smart", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+	text-align:center;
+}
+
+   /* #modal-background {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: .50;
+        -webkit-opacity: .5;
+        -moz-opacity: .5;
+        filter: alpha(opacity=50);
+        z-index: 1000;
+    }
+    */
+	
+	#modal-background {
+		display: none;
+		position: fixed;
+		z-index: 999;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+		padding-top: 60px;	
+	}
+	
+    /* #modal-content {
+        background-color: white;      
+        display: none;        
+        left: 50%;
+        margin: -120px 0 0 -160px;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        width: 600px;
+        z-index: 1000;		
+    }
+	*/
+	
+	#modal-content {
+		display: none;
+		position: fixed;
+		z-index: 999;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+		padding-top: 60px;	
+	}
+	
+	.cus-home-reg-pp{		
+		background: #fff;
+		margin-top: 0%;
+		width: 90%;
+		max-width: 600px;
+		padding: 40px 0;
+		box-sizing: border-box;
+		overflow: hidden;
+		margin: 0px auto;		
+	}
+	
+	
+    #modal-background.active, #modal-content.active {
+        display: block;
+    }
+	
+	#modal-background.hide, #modal-content.hide {
+        display: none;
+    }
+	
+	.close-home-reg{
+		position: absolute;
+		right: 377px;
+		top: 59px;
+		color: #000;
+		font-size: 26px;
+		font-weight: bold;
+		opacity: 1;
+		z-index: 1;
+		cursor: Pointer;
+	}
+	
+.btn-sign-up {
+    background: #a40033 !important;
+    border: 1px solid #a40033!important;
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 1px;
+    font-family: 'LG Smart', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+.btn-sign-up:hover {
+    background-color: #a40033d1!important;
+    border: 1px solid #a40033d1!important;
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 1px;
+    font-family: 'LG Smart', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.butter-home-login-terms{
+	    margin-left: 120px;  
+}
+
+
+
+.input-group {
+  position: relative;
+  margin: 25px 0 20px;
+}
+
+.input-group input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;  
+  margin: 2px 0;
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+.input-group label {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  font-family:"LG Smart",Sans-serif;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -10px;
+  font-size: 14px;
+  color: #000;  
+}
+
+.input-group .bar {
+  position: relative;
+  display:block;
+  width:315px;
+}
+
+.input-group .bar:before,
+.input-group .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: var(--main-color);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input-group .bar:before {
+  left: 50%;
+}
+
+.input-group .bar:after {
+  right: 50%;
+}
+
+.input-group input:focus ~ .bar:before,
+.input-group input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.input-group .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input-group input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+.input-group input:focus {	
+	border-bottom-color: var(--main-color);
+	font-size: 16px;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	
+	.close-home-reg{
+	position: absolute;
+    right: 27px;
+    top: 57px;
+    color: #000;
+    font-size: 26px;
+    font-weight: bold;
+    opacity: 1;
+    z-index: 1;
+    cursor: Pointer;
+	}
+	
+	.butter-home-login-terms {
+		margin-left: 4px;
+	}
+	
+	h4.customer-reg-disc {
+    font-family: 'LG Smart',sans-serif;
+    font-size: 14px;
+    color: #7eb6f3;
+	}
+	
+	h3.off-sav-customer {
+    font-size: 18px;
+    color: #8ba54f;
+    font-family: 'LG Smart', sans-serif;
+	}
+	
+	span.off-cashback-cus {
+    font-family: 'LG Smart';
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 5px;
+	}
+	
+	.cus-reg-sect-title {
+    /* margin-left: 33px; */
+    margin-right: -10px;
+    margin-left: -20px;
+}
+	
+} 

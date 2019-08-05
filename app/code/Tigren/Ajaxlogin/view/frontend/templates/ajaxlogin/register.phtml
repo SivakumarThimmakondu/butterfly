@@ -1,0 +1,138 @@
+<?php
+/**
+ * @copyright Copyright (c) 2017 www.tigren.com
+ * @var $block \Tigren\Ajaxlogin\Block\Form\Register
+ */
+?>
+<div class="mb-register-popup" style="display:none;">
+    
+    <div class="mb-ajaxsuite-popup-border mb-ajaxlogin-popup mb-ajaxlogin-register butterfly-signup cus-home-reg-pp" id="butter-signup">
+       <!--  <div class="block-title">
+            <strong id="block-customer-login-heading" role="heading" aria-level="2"><?= $block->escapeHtml(__('Create New Customer Account')) ?></strong>
+        </div> -->
+        <div class="cus-reg-sect-title block-title">                               
+           <h3 class="customer-headeing">New Customer ?</h3>
+           <h4 class="customer-reg-disc">Hurry! Register Now For Unbelievable Discounts.</h4>                                  
+           <div class="customer-reg-sav"><h3 class="off-sav-customer">SAVE Rs.10,000</h3> <span class="off-cashback-cus">30% Off + 10% Cashback</span> </div>                              
+        </div>
+        <form class="form form-create-account mb-login-form-register butterfly-signup-form" method="post"
+              id="ajax-register-form"
+              enctype="multipart/form-data" autocomplete="off">
+
+            <div class="create info account">
+                
+                <input type="hidden" name="success_url" value="">
+                <input type="hidden" name="error_url" value="">
+                <input type="hidden" name="form_key" value="<?php echo $block->getFormKey() ?>" />
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="field field-name-firstname required but-home-login">
+                   
+                    <div class="control input-group">
+                        <input type="text" id="firstname" name="firstname" value="" title="First Name"
+                               class="input-text required-entry" data-validate="{required:true}" autocomplete="off"
+                               aria-required="true">
+                         <span class="highlight"></span>
+                         <span class="bar"></span>
+                         <label class="label" for="firstname">
+                        <span><?php echo __('First Name') ?></span>
+                    </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="field field-name-lastname required but-home-login">                   
+
+                    <div class="control input-group">
+                        <input type="text" id="lastname" name="lastname" value="" title="Last Name"
+                               class="input-text required-entry" data-validate="{required:true}" autocomplete="off"
+                               aria-required="true">
+                     <span class="highlight"></span>
+                     <span class="bar"></span>
+                     <label class="label" for="lastname">
+                        <span><?= __('Last Name') ?></span>
+                    </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-md-6">
+                <div class="field required but-home-login">
+                   
+                    <div class="control input-group">
+                        <input type="email" name="email" autocomplete="email" id="customer-email" value="" title="Email"
+                               class="input-text" data-validate="{required:true, 'validate-email':true}"
+                               aria-required="true">
+
+                         <label for="customer-email" class="label"><span><span><?= __('Email') ?></span></span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="but-home-login">               
+                    
+                    <div class="control input-group">
+                        <input type="number" name="mobile" autocomplete="mobile" id="customer-mobile" value="" title="Mobile"
+                               class="input-text" data-validate="{required:true}"
+                               aria-required="true">
+
+                    <label for="customer-email" class="label"><span><span><?= __('Mobile') ?></span></span></label>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-md-6">
+                <div class="field password required but-home-login">
+                    
+                    <div class="control input-group">
+                        <input type="password" name="password" id="password" title="Password" class="input-text"
+                               data-password-min-length="8" data-password-min-character-sets="3"
+                               data-validate="{required:true, 'validate-customer-password':true}" autocomplete="off"
+                               aria-required="true">
+
+                        <label for="password" class="label"><span><?= __('Password') ?></span></label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="field confirmation required but-home-login">
+                  
+                    <div class="control input-group">
+                        <input type="password" name="password_confirmation" title="Confirm Password"
+                               id="password-confirmation" class="input-text"
+                               data-validate="{required:true, equalTo:'#password'}" autocomplete="off"
+                               aria-required="true">
+
+                      <label for="password-confirmation" class="label"><span><?= __('Confirm Password') ?></span></label>        
+                    </div>
+                </div>
+            </div> </div>
+             <?php $_gender = $block->getLayout()->createBlock('Tigren\Ajaxlogin\Block\Widget\Gender') ?>
+        <?php if ($_gender->isEnabled()): ?>
+            <?= $_gender->setGender($block->getFormData()->getGender())->toHtml() ?>
+        <?php endif ?>
+            </div>
+
+             <div class="field choice newsletter">
+                    <input type="checkbox" name="is_subscribed" title="Sign Up for Newsletter" value="1"
+                           id="is_subscribed" class="checkbox">
+                    <label for="is_subscribed" class="label"><span><?= __('Sign Up for Newsletter') ?></span></label>
+                </div>
+            
+                <div class="primary">
+                    <button type="submit" class="action submit primary btn btn-block waves-effect z-depth-0 btn-sign-up" title="Create Account"><span><?= __('SIGN UP') ?></span></button>
+               </div>
+                         
+                <div class="secondary cus-home-reg">
+                    <a class="action back" href="<?php echo $block->getUrl('customer/account/login'); ?>">
+                        <span class="mb-back-link cus-home-reg-not-yet-member" id="modal-close"><?php echo __('Already Member ? Sign In Now') ?></span>
+                    </a>
+                </div>
+          
+        </form>
+    </div>
+</div>
