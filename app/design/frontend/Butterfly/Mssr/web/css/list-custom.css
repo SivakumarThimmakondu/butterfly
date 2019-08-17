@@ -173,7 +173,7 @@ h3.customer-headeing{     margin-top: 0;}
     cursor: pointer;
     max-width: 20px !important;
     opacity: 9 !important;}*/
-    .butter-home-login-remember input[ type="radio"]:checked{     background: #a40033 url('../images/lazy-bg.png')top center;
+    .butter-home-login-remember input[ type="radio"]:checked{     background: #a40033 url('../images/tick.jpg') center;
     /*background: #a40033;*/
     color: #fff;
     text-align: center;
