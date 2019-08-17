@@ -1,56 +1,49 @@
-<?xml version="1.0"?>
-<!--
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
--->
-<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <update handle="default_head_blocks"/>
-    <body>
+<?xml version="1.0" encoding="UTF-8"?>
+ <!--
+ /**
+  * Copyright © Magento, Inc. All rights reserved.
+  * See COPYING.txt for license details.
+  */
+ -->
 
-    	/*** deeps remove the default welcome msg ****/
-        <referenceBlock name="register-link" remove="true" />           <!--for Create Account Link-->
-        <referenceBlock name="my-account-link" remove="true" />         <!--for My Account Link-->
-         <referenceBlock name="header.panel.wrapper" remove="true" />      <!-- inside header container -->
-         <referenceBlock name="header-wrapper" remove="true" />      <!-- inside header container -->
-         <referenceBlock name="navigation.sections" remove="true" />      <!-- navigation section -->
-        
-    	 <!--<move element="page.main.title" destination="mycustom3.div" before="breadcrumbs"/>
-		  <move element="breadcrumbs" destination="mycustom3.div" after="page.main.title"/>  -->
-          
-        <move element="logo" destination="mycustom3.div" before="-"/> 
-        <move element="catalog.topnav" destination="mycustom3.div" after="logo"/> <!-- category-->
-        <move element="top.search" destination="mycustom4.div" before="-" /> <!--search-->
-        <move element="top.links" destination="mycustom4.div" after="top.search"/> <!-- wishlist signin -->
-        <move element="minicart" destination="mycustom4.div" after="top.links"/> <!--cart-->
-        <move element="mycustom4.div" destination="mycustom3.div" after="catalog.topnav"/> 
-
-
-
-
-
-		  <referenceContainer name="header.container">
-
-             <container name="mycustom3.div" htmlTag="div" htmlClass="header" />
-
-              <container name="mycustom4.div" htmlTag="div" htmlClass="search-outer" />
-          	
-          </referenceContainer>
- 
-
-
-    	<referenceContainer name="footer-container" htmlClass="site_footer_wrap scheme_dark" >
-        	
-            <container name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="">
-				<block class="Magento\Theme\Block\Html\Footer" name="butterflyfooter" template="Magento_Theme::html/footer.phtml"/>
-                <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="Magento_Theme::html/copyright.phtml"/>
-                <referenceBlock name="store_switcher" remove="true" />
-                 <referenceBlock name="footer_links" remove="true" />
-                <referenceBlock name="report.bugs" remove="true" />
-            </container>
-        </referenceContainer>
-
-
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="3columns" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+   <update handle="default_head_blocks" />
+   <body>
+      <referenceBlock name="register-link" remove="true" />
+      <!--for Create Account Link-->
+      <referenceBlock name="my-account-link" remove="true" />
+      <!--for My Account Link-->
+      <referenceBlock name="header.panel.wrapper" remove="true" />
+      <!-- inside header container -->
+      <referenceBlock name="header-wrapper" remove="true" />
+      <!-- inside header container -->
+      <referenceBlock name="navigation.sections" remove="true" />
+      <!-- navigation section -->
+      <!--<move element="page.main.title" destination="mycustom3.div" before="breadcrumbs"/>
+          <move element="breadcrumbs" destination="mycustom3.div" after="page.main.title"/>  -->
+      <move element="logo" destination="mycustom3.div" before="-" />
+      <move element="catalog.topnav" destination="mycustom3.div" after="logo" />
+      <!-- category-->
+      <move element="top.search" destination="mycustom4.div" before="-" />
+      <!--search-->
+     <move element="top.links" destination="mycustom4.div" after="top.search" />
+      <!-- wishlist signin -->
+      <move element="minicart" destination="mycustom4.div" after="top.links" />
+      <!--cart-->
+      <move element="mycustom4.div" destination="mycustom3.div" after="catalog.topnav" />
+      <referenceContainer name="header.container">
+         <container name="mycustom3.div" htmlTag="div" htmlClass="header" />
+         <container name="mycustom4.div" htmlTag="div" htmlClass="search-outer" />
+      </referenceContainer>
+      <referenceContainer name="footer-container" htmlClass="site_footer_wrap scheme_dark">
+         <container name="footer" as="footer" label="Page Footer" htmlTag="div">
+            <block class="Magento\Theme\Block\Html\Footer" name="butterflyfooter" template="Magento_Theme::html/footer.phtml" />
+            <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="Magento_Theme::html/copyright.phtml" />
+            <referenceBlock name="store_switcher" remove="true" />
+            <referenceBlock name="footer_links" remove="true" />
+            <referenceBlock name="report.bugs" remove="true" />
+         </container>
+     </referenceContainer>
    </body>
-</page>  	
+</page>
+
