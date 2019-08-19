@@ -104,24 +104,20 @@ jQuery(document).ready(function(){
 
 /***** Home page tab  ****/
 
-jQuery(document).ready(function() {    
-
-jQuery('#tabs li a:not(:first)').addClass('inactive');
-jQuery('.container').hide();
-jQuery('.container:first').show();
-    
 jQuery('#tabs li a').click(function(){
-    var t = jQuery(this).attr('id');
+  var t = jQuery(this).attr('id');
+
   if(jQuery(this).hasClass('inactive')){ //this is the start of our condition 
     jQuery('#tabs li a').addClass('inactive');           
     jQuery(this).removeClass('inactive');
-    
+
     jQuery('.container').hide();
     jQuery('#'+ t + 'C').fadeIn('slow');
  }
 });
 
-});
+
+
 
 
 
