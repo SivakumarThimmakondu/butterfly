@@ -113,7 +113,7 @@ button.btn:hover{     background: #353f49 !important; border: 1px solid #353f49 
 .mb-register-popup .news-check{     margin-bottom: 20px;     position: relative;}
 .input-group input{     border-bottom: 1px solid #000; }
 .mb-register-popup .news-check .label{ padding-left: 30px;     font-size: 14px; font-weight: 600; color: #000;}
-.mb-register-popup .news-check .label:after{ content: "";
+/*.mb-register-popup .news-check .label:after{ content: "";
     display: block;
     clear: both;
     width: 15px;
@@ -121,14 +121,14 @@ button.btn:hover{     background: #353f49 !important; border: 1px solid #353f49 
     border: 1px solid #000;
     position: absolute;
     top: 0;
-    left: 0; cursor:pointer;     font-size: 11px; font-weight: normal;}
+    left: 0; cursor:pointer;     font-size: 11px; font-weight: normal;}*/
 .mb-register-popup .news-check input[ type="checkbox"]{ width: 15px;
     height: 15px;
     border: 1px solid #000;
     position: absolute;
     top: 0;
     left: 0;     margin: 0;
-    opacity: 0;     z-index: 9;     cursor: pointer;}
+    /*opacity: 0; */    z-index: 9;     cursor: pointer;}
 .mb-register-popup .news-check input[ type="checkbox"]:checked ~ label:after{ content: "✔"; background:#a40033; color:#fff; text-align:center; border-color:#a40033;}
 .btn-sign-up{     padding: 15px 15px !important;}
 h3.customer-headeing{     margin-top: 0;}

@@ -14,7 +14,7 @@
            <h3 class="customer-headeing">New Customer ?</h3>
            <h4 class="customer-reg-disc">Hurry! Register Now For Unbelievable Discounts.</h4>                                  
            <div class="customer-reg-sav"><h3 class="off-sav-customer">SAVE Rs.10,000</h3> <span class="off-cashback-cus">30% Off + 10% Cashback</span> </div>                              
-          <div class="cus-social-link mob">           </div>
+          <div class="cus-social-link mob">          
         <p class="con-with">OR CONTINUE WITH</p>    
         <ul>    
           <li class="facebook">   
@@ -27,7 +27,7 @@
       </div>    
         
     </div>
-        </div>
+       
         <form class="form form-create-account mb-login-form-register butterfly-signup-form" method="post"
               id="ajax-register-form"
               enctype="multipart/form-data" autocomplete="off">
@@ -114,15 +114,15 @@
             <?= $_gender->setGender($block->getFormData()->getGender())->toHtml() ?>
         <?php endif ?>
             </div>
-
+<!-- 
              <div class="field choice newsletter news-check">
                     <input type="checkbox" name="is_subscribed" title="Sign Up for Newsletter" value="1"
                            id="is_subscribed" class="checkbox">
                     <label for="is_subscribed" class="label"><span><?= __('Sign Up for Newsletter') ?></span></label>
-                </div>
+                </div> -->
                <div class="field choice news-check">    
                     <input type="checkbox" name="is_subscribed" title="Sign Up for Newsletter" value="1"    
-                           id="is_subscribed" class="checkbox">   
+                           id="is_subscribed" class="checkbox" required>   
                     <label for="is_subscribed" class="label"><span><?= __('I agree to User Agreement.') ?></span></label>   
                 </div>
                 <div class="primary">
