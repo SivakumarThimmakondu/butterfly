@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <!--
 /**
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 -->
+=======
+ <!--
+ /**
+  * Copyright © Magento, Inc. All rights reserved.
+  * See COPYING.txt for license details.
+  */
+ -->
+
+>>>>>>> c4beb084586ab457993aa2b158609cb58215a258
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="3columns" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
    <update handle="default_head_blocks" />
    <body>
@@ -25,14 +35,21 @@
       <!-- category-->
       <move element="top.search" destination="mycustom4.div" before="-" />
       <!--search-->
+<<<<<<< HEAD
       <move element="top.links" destination="mycustom4.div" after="top.search" />
+=======
+     <move element="top.links" destination="mycustom4.div" after="top.search" />
+>>>>>>> c4beb084586ab457993aa2b158609cb58215a258
       <!-- wishlist signin -->
       <move element="minicart" destination="mycustom4.div" after="top.links" />
       <!--cart-->
       <move element="mycustom4.div" destination="mycustom3.div" after="catalog.topnav" />
+<<<<<<< HEAD
       
      
 
+=======
+>>>>>>> c4beb084586ab457993aa2b158609cb58215a258
       <referenceContainer name="header.container">
          <container name="mycustom3.div" htmlTag="div" htmlClass="header" />
          <container name="mycustom4.div" htmlTag="div" htmlClass="search-outer" />
@@ -45,7 +62,11 @@
             <referenceBlock name="footer_links" remove="true" />
             <referenceBlock name="report.bugs" remove="true" />
          </container>
+<<<<<<< HEAD
       </referenceContainer>
+=======
+     </referenceContainer>
+>>>>>>> c4beb084586ab457993aa2b158609cb58215a258
    </body>
 </page>
 

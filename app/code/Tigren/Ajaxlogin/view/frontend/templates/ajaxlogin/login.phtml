@@ -15,7 +15,18 @@
             </div> -->
             <div class="home-cus-sign-in-title">                  
                      <h3 class="home-customer-title">Already Have An Account</h3>                  
-                     <h4 class="home-customer-small-head">Sign In To Track Your Order, Use Wishlist & More. </h4>         
+                     <h4 class="home-customer-small-head">Sign In To Track Your Order, Use Wishlist & More. </h4>
+                     <div class="cus-social-link mob">    
+            <p class="con-with">OR CONTINUE WITH</p>    
+            <ul>    
+              <li class="facebook">   
+                <a href="#">Facebook</a>    
+              </li>   
+              <li class="google">   
+                <a href="#">Google</a>    
+              </li>   
+            </ul>   
+          </div>         
                   </div>
             <form class="form butterfly-signup-form"
                   method="post"
@@ -24,31 +35,33 @@
               <?php echo $block->getBlockHtml('formkey'); ?>
                 <div class="login" data-hasrequired="<?php echo __('* Required Fields') ?>">
                     <div class="email required but-home-login">
-                        <label class="label" for="email"><span><?php echo __('Enter Your Email') ?></span></label>
-                        <div class="control form-group">
-                            <input name="login[username]"
+                       <!--  <label class="label" for="email"><span><?php //echo __('Enter Your Email') ?></span></label> -->
+                        <div class="control form-group l-up">
+                            <input name="login[username]" placeholder="Enter Your Email"
                                    value="<?php echo $block->escapeHtml($block->getUsername()) ?>" <?php if ($block->isAutocompleteDisabled()) : ?> autocomplete="off"<?php endif; ?>
                                    id="ajaxlogin-email" type="email" class="input-text" title="<?php echo __('Email') ?>"
                                    data-validate="{required:true, 'validate-email':true}">
                         </div>
                     </div>
                     <div class="password required but-home-login">
-                        <label for="pass" class="label"><span><?php echo __('Enter Your Password') ?></span></label>
-                        <div class="control form-group">
-                            <input name="login[password]"
+                       <!--  <label for="pass" class="label"><span><?php //echo __('Enter Your Password') ?></span></label> -->
+                        <div class="control form-group l-up">
+                            <input name="login[password]" placeholder="Enter Your Password"
                                    type="password" <?php if ($block->isAutocompleteDisabled()) : ?> autocomplete="off"<?php endif; ?>
                                    class="input-text" id="ajaxlogin-pass signin-password" title="<?php echo __('Password') ?>"
                                    data-validate="{required:true, 'validate-password':true}">
+                                   <p class="show-hide">Show</p>
                         </div>
                     </div>
                 </div>
                 <div class="butter-home-login-remember">                      
-                      <input class="form-check-input css-checkbox" type="checkbox" id="keep-me" value="">
-                      <label for="keep-me">Keep Me Signed In</label>                      
+                      <input type="radio" name="" value="" required>
+                      <input class="form-check-input css-checkbox" type="checkbox" id="keep-me" value="" required>                       
+                      <label for="keep-me">I agree to User Agreement.</label>                      
                   </div>
                  
                         <button type="submit" class="action submit primary btn btn-block waves-effect z-depth-0 btn-sign-in" name="login" id="login">
-                           <?php echo __('SIGN IN') ?>
+                           <span><?php echo __('SIGN IN') ?></span>
                         </button>
                  
               <?php if ($block->isEnableSocialLogin() && !$block->isLoggedIn()): ?>
@@ -83,7 +96,17 @@
                     </div>
                
             </form>
-            
+            <div class="cus-social-link desk">    
+            <p class="con-with">OR CONTINUE WITH</p>    
+            <ul>    
+              <li class="facebook">   
+                <a href="#">Facebook</a>    
+              </li>   
+              <li class="google">   
+                <a href="#">Google</a>    
+              </li>   
+            </ul>   
+          </div>
                     <div class="cus-home-reg">
                         <a href="<?php echo $block->getUrl('customer/account/create'); ?>">
                           <span class="cus-home-reg-not-yet-member" id="Reg-now"><?= $block->escapeHtml(__('Not a member yet ? Sign Up Now')) ?></span></a>
@@ -94,3 +117,28 @@
     </div>
     </div>
 </div>
+
+<script>    
+window.onload = function () {   
+  jQuery('body').on('focus','.l-up',function(){   
+    jQuery(this).prev('label').addClass('label-up');    
+  });   
+  jQuery('body').on('focusout','.l-up',function(){    
+    if(jQuery(this).children('input').val()==""){   
+      jQuery(this).prev().removeClass('label-up');    
+    }   
+  });   
+      
+      
+  jQuery('body').on('click','.show-hide',function(){    
+    if(jQuery(this).html() == 'Show') {   
+      jQuery(this).html('Hide');    
+      jQuery(this).prev('input').attr('type','text');   
+    }   
+    else {    
+      jQuery(this).html('Show');    
+      jQuery(this).prev('input').attr('type','password');   
+    }   
+  });   
+};    
+</script>   

@@ -1,0 +1,300 @@
+@font-face {
+font-family: 'LG Smart Italic';
+font-style: normal;
+font-weight: normal;
+src: local('LG Smart Italic'), url("../fonts/LG Smart Regular Italic.woff") format("woff");
+}
+
+
+@font-face {
+font-family: 'LG Smart';
+font-style: normal;
+font-weight: normal;
+src: local('LG Smart'), url("../fonts/LG Smart Regular.woff") format("woff");
+}
+
+
+@font-face {
+font-family: 'LG Smart Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('LG Smart Bold Italic'), url("../fonts/LG Smart Bold Italic.woff") format("woff");
+}
+
+
+@font-face {
+font-family: 'LG Smart Bold';
+font-style: normal;
+font-weight: normal;
+src: local('LG Smart Bold'), url("../fonts/LG Smart Bold.woff") format("woff");
+}
+
+
+@font-face {
+font-family: 'LG Smart Light Light';
+font-style: normal;
+font-weight: normal;
+src: local('LG Smart Light Light'), url("../fonts/LG Smart Light.woff") format("woff");
+}
+
+
+@font-face {
+font-family: 'LG Smart Light SemiBold';
+font-style: normal;
+font-weight: normal;
+src: local('LG Smart Light SemiBold'), url("../fonts/LG Smart SemiBold.woff") format("woff");
+}
+body{ font-family:"LG Smart", sans-serif !important;}
+/*-----------------login popup----------*/
+.butterfly-signup:after,.mb-ajaxsuite-popup-wrapper .mb-ajaxsuite-popup-border:after{ content:""; display:table; clear:both;}
+.butterfly-signup .mb-ajaxsuite-popup-border{    max-width: none; min-width: auto; padding: 0;}
+.mb-ajaxsuite-popup-wrapper .butterfly-signup .block-customer-login{     float: none; width: 100% !important; padding-right: 0 !important;}
+.butterfly-signup .home-cus-sign-in-title h3.home-customer-title{     text-align: left;     margin-top: 0;}
+.butterfly-signup .home-cus-sign-in-title h4.home-customer-small-head{     font-size: 16px; text-align: left; color: #00adf1; margin-top: 10px;}
+.butterfly-signup .butterfly-signup-form{ padding: 0px 0;}
+.butterfly-signup .btn-sign-in{     padding: 15px 15px;}
+.butterfly-signup .btn-sign-in:hover{    }
+.butterfly-signup .form-group{     padding: 0 0 !important;}
+.butterfly-signup .but-home-login { margin-bottom: 15px;     position: relative;}
+.mb-ajaxsuite-popup-wrapper a.mb-ajaxsuite-close{     width: 12px; height: 12px;     background-size: 100%;}
+
+.mb-login-popup .butterfly-signup .home-cus-sign-in-title h3.home-customer-title{ text-align: left; margin-top: 0; margin-bottom: 15px;}
+.mb-login-popup .butterfly-signup .home-cus-sign-in-title h4.home-customer-small-head{ text-align: left; color: #2e2e2e;     margin-bottom: 20px;}
+.mb-login-popup .butterfly-signup .form-group input{ border-bottom:1px solid #000000;}
+.mb-login-popup .butterfly-signup .but-home-login{ position:relative;     margin-bottom: 19px;}
+.butterfly-signup .form-group input:focus{ padding-top:8px !important; }
+.butterfly-signup .form-group input{     padding-top: 8px !important; }
+.mb-login-popup .butterfly-signup .but-home-login label{     position: absolute;
+    top: 10px;}
+.butterfly-signup .but-home-login label{     font-size: 18px; font-family: 'LG Smart'; left: 4px;}
+.mb-login-popup .butterfly-signup .but-home-login label.label-up,.mb-register-popup .butterfly-signup .but-home-login label.label-up{top: -20px;     transition: .2s ease all; -moz-transition: .2s ease all; -webkit-transition: .2s ease all;}
+.rqr{color:#25b4f0; margin-left: 4px !important;}
+.butter-home-login-remember{ margin-bottom: 25px;}
+.register{ padding:20px 40px !important;}
+.butterfly-signup .form-group input:focus {box-shadow: none !important; outline:0 !important;}
+.cus-social-link:after{ content:""; display:table; clear:both;}
+.cus-social-link{ text-align:center;     margin-top: 0; }
+.cus-social-link ul{ list-style:none; margin:0 0; padding:0 0;}
+.cus-social-link ul li{display:inline-block;margin-right: 2px;position:relative; border:1px solid #ececec;}
+.cus-social-link ul li a{display:block;background:#ececec;padding:6px 18px 6px 50px;color: #707982;     font-size: 20px; font-family: 'LG Smart';}
+.cus-social-link ul li a:after{content:"";display:block;clear:both;width:40px;height: 40px;position:absolute;top:0;left:0;background: #ececec;}
+.cus-social-link ul li a:before{content:"";display:block;clear:both;width: 35px;height: 40px;position:absolute;top:0;left: 8px;background:url(../images/sprite-icon.png) no-repeat 0 0;z-index: 9;background-size: 100%;}
+.cus-social-link ul li.facebook a:before{background-position: 0 -656px;left: 3px;}
+.cus-social-link ul li.google a:before{background-position: 0 -701px;left: 4px;}
+.cus-social-link ul li:last-child{ margin-right:0; }
+.cus-social-link ul li a:hover{ text-decoration:none; background:#a40033; color:#fff;}
+.cus-social-link ul li a:hover:after{ background:#fff;}
+.cus-social-link ul li:hover{ border-color:#a40033;}
+.mb-ajaxsuite-popup-wrapper{     width: 600px;}
+.register{     max-width: 600px !important;}
+.mb-login-popup .cus-home-reg{         margin-top: 10px !important; text-align: center; float: none;}
+button.btn{ background: #a40033 !important; border: 1px solid #a40033!important;     font-family: 'LG Smart', sans-serif !important;
+    font-size: 18px !important;
+    text-transform: uppercase;}
+button.btn:hover{     background: #353f49 !important; border: 1px solid #353f49 !important;}
+.butter-home-login-remember input[type=checkbox] + label{font-size: 14px !important; padding: 8px 28px 0 0;}
+.butter-home-login-remember input[type=radio]{ border: 1px solid #000;padding: 0.5em; -webkit-appearance: none;}
+.butter-home-login-remember input[type=radio]:checked {
+  background: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==) no-repeat center center;
+  background-size: 9px 9px;
+}
+
+.butter-home-login-remember input[type=radio]:focus {
+  outline-color: transparent;
+}
+.con-with{ color: #000; font-size: 16px; margin-bottom: 8px;}
+/*----------registration popup----------*/
+.mb-ajaxsuite-popup-wrapper .mb-register-popup, .mb-ajaxsuite-popup-wrapper .mb-forgetpassword-popup{ padding:20px 40px 10px;}
+.mb-register-popup .cus-reg-sect-title{     margin-left: 0;     margin-bottom: 9px !important;}
+.mb-ajaxsuite-popup-wrapper .mb-register-popup .mb-ajaxsuite-popup-border{     padding-top: 0;}
+.mb-register-popup h4.customer-reg-disc{     color: #00adef; margin-top: 10px; margin-bottom: 10px;}
+.mb-register-popup .but-home-login label{ position: absolute; top: 6px; z-index: 9; color: #000;}
+.mb-register-popup .input-group{ margin: 5px 0 5px;}
+.mb-register-popup .news-check{     margin-bottom: 20px;     position: relative;}
+.input-group input{     border-bottom: 1px solid #000; }
+.mb-register-popup .news-check .label{ padding-left: 30px;     font-size: 14px; font-weight: 600; color: #000;}
+/*.mb-register-popup .news-check .label:after{ content: "";
+    display: block;
+    clear: both;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0; cursor:pointer;     font-size: 11px; font-weight: normal;}*/
+.mb-register-popup .news-check input[ type="checkbox"]{ width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;     margin: 0;
+    /*opacity: 0; */    z-index: 9;     cursor: pointer;}
+.mb-register-popup .news-check input[ type="checkbox"]:checked ~ label:after{ content: "✔"; background:#a40033; color:#fff; text-align:center; border-color:#a40033;}
+.btn-sign-up{     padding: 15px 15px !important;}
+h3.customer-headeing{     margin-top: 0;}
+.but-home-login .input-group input{ border-bottom:1px solid #000; width: 100%;}
+.mb-login-form-register .row >div.col-md-6{     margin-right: 5%;}
+.mb-login-form-register .row >div.col-md-6:nth-child(2n){ margin-right:0;}
+.mb-ajaxsuite-popup-border {
+    max-width: 100% !important;
+    min-width: 100% !important;
+}
+.mb-register-popup .news-check { display: inline-block; width: 100% !important;}
+
+.butter-home-login-remember label:before{ display:none;}
+/*.butter-home-login-remember label:after{    content: "" !important;
+    display: block !important;
+    clear: both;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    max-width: 20px !important;
+    opacity: 9 !important;}
+
+.butter-home-login-remember input[ type="checkbox"]:checked ~ label:after{     content: "✔" !important;
+    background: #a40033;
+    color: #fff;
+    text-align: center;
+    border-color: #a40033;     max-width: 20px !important;
+    font-size: 11px !important; font-weight:normal;}
+    .butter-home-login-remember input[ type="radio"]{    content: "" !important;
+    display: block !important;
+    clear: both;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    max-width: 20px !important;
+    opacity: 9 !important;}*/
+    .butter-home-login-remember input[ type="radio"]:checked{     background: #a40033 url('../images/tick.jpg') center;
+    /*background: #a40033;*/
+    color: #fff;
+    text-align: center;
+    border-color: #a40033;     max-width: 20px !important;
+    font-size: 11px !important; font-weight:normal;}
+	.butter-home-login-remember{     margin-bottom: 8px !important;}
+	.input-group input{ font-size: 14px !important;}
+	.but-home-login .input-group input{     margin: 1px 0px !important; z-index: 9 !important;
+    position: relative;
+    background: transparent;}
+	.butterfly-signup-form button.btn{ position:relative; border-radius: 0 !important; margin-top: 15px;}
+.butterfly-signup-form button.btn:after{
+	content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    height: calc(100% + 0px);
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    border-radius: 2px;
+    background-color: #a40033 !important;
+    border: 1px solid #a40033 !important;
+    z-index: 9;
+	}
+
+.butterfly-signup-form button.btn:hover:after{ width: calc(100% + 2px); 	background-color: #929e1e !important; border: 1px solid #929e1e !important;}
+.butterfly-signup-form button.btn span{ position:relative; z-index:99;}
+h3.customer-headeing{  font-size: 25px !important;}
+.show-hide{     position: absolute; right: 6px; top: 4px; font-size: 18px; font-family: 'LG Smart'; color: #929e1e; cursor: pointer;     z-index: 9;}
+.mb-register-popup .newsletter{     margin-bottom: 10px;}
+.cus-home-reg{     margin-top: 13px !important;     margin-bottom: 15px;}
+
+/*---------forget password---------*/
+.mb-ajaxsuite-popup-wrapper .block-customer-login .block-title strong, .mb-ajaxsuite-popup-wrapper .block-new-customer .block-title strong, .mb-ajaxsuite-popup-wrapper .mb-ajaxlogin-register .block-title strong, .mb-ajaxsuite-popup-wrapper .mb-ajaxlogin-forgotpassword .block-title strong{ font-family: "LG Smart", sans-serif; font-size: 22px; font-weight: 700; color: #000;}
+.ajax-forgetpassword-form:after{ content:""; display:table; clear:both;}
+.ajax-forgetpassword-form .field input[ type="email"]{border-bottom: 1px solid #000000 !important;outline:0;border:0;}
+.ajax-forgetpassword-form .field{ position:relative;}
+.ajax-forgetpassword-form .field label{position: absolute;top: 5px;font-size: 18px;font-family: 'LG Smart';left: 4px;font-weight: normal !important;}
+.ajax-forgetpassword-form .field label.label-up{top: -20px; transition: .2s ease all; -moz-transition: .2s ease all; -webkit-transition: .2s ease all;}
+.ajax-forgetpassword-form .field input:focus {box-shadow: none !important; outline:0 !important;}
+input[type="text"], input[type="password"], input[type="url"], input[type="tel"], input[type="search"], input[type="number"], input[type="datetime"], input[type="email"]{ padding: 0 4px !important;}
+.forget-btn{     position: relative; overflow: hidden;     margin-bottom: 15px;}
+.forget-btn >div{display: block !important;}
+.mb-ajaxsuite-popup-wrapper .actions .action.submit.primary{background: #a40033 !important;border: 1px solid #a40033!important;font-family: 'LG Smart', sans-serif !important;font-size: 18px !important;text-transform: uppercase;font-weight:normal;padding: 15px 15px;margin: 0;border-radius: 0 !important;}
+.mb-ajaxsuite-popup-wrapper .actions .action.submit.primary:after{
+	content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    height: calc(100% + 0px);
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    border-radius: 2px;
+    background-color: #a40033 !important;
+    border: 1px solid #a40033 !important;
+    z-index: 9;
+	}
+.mb-ajaxsuite-popup-wrapper .actions .action.submit.primary:hover:after{width: calc(100% + 2px); 	background-color: #929e1e !important; border: 1px solid #929e1e !important;}
+.mb-ajaxsuite-popup-wrapper .actions .action.submit.primary span{ position:relative; z-index:99;}
+.mb-ajaxsuite-popup-wrapper .fieldset{     margin: 0 0 25px !important;}
+.butterfly-signup .forgt-pass a:hover{ color:#929e1e !important;}
+a:hover{ color:#929e1e; text-decoration:none;}
+.mb-ajaxsuite-popup-wrapper .mb-login-popup-title strong{ color:#000 !important;}
+.cus-social-link.mob{ display:none;}
+
+
+/*login error------*/
+.mb-ajaxsuite-popup-wrapper .mb-ajaxsuite-popup-border.mb-ajaxlogin-message-error{     padding: 0px 0 15px !important;}
+.action.primary{         background: #a40033 !important;
+    border-color: #a40033 !important;
+    font-family: 'LG Smart';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    border-radius: 26px !important;
+    text-transform: uppercase;
+    padding: 8px 32px;}
+.action.primary:hover{ background: #929e1e !important; border-color: #929e1e !important;}
+.mb-ajaxsuite-popup-wrapper .block-customer-login .primary, .mb-ajaxsuite-popup-wrapper .block-new-customer .primary{     border-radius: 0 !important; padding: 14px 20px; font-weight: normal !important;}
+.mb-error-message .message{ padding: 0 34px; margin-bottom: 25px;}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000 !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000 !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000 !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #000 !important;
+}
+
+
+@media only screen and (max-width: 767px){
+	.register{     width: 100% !important; max-width: 100% !important; padding: 20px !important;}
+	.mb-login-form-register .row{ display: block;}
+	.mb-login-form-register .row >div.col-md-6{     width: 100%; margin-right: 0;}
+	.mb-ajaxsuite-popup-wrapper { width: 500px;}
+	.mb-register-popup .newsletter{ width: 74% !important;}
+	.mb-login-popup .cus-home-reg{     float: none;}
+	.cus-social-link.mob{      margin-bottom: 20px;     text-align: left;}
+	.cus-social-link.desk{ }
+	.mb-ajaxlogin-register .con-with{ text-align: center;}
+	.mb-login-popup .cus-home-reg{     margin-top: 0px !important;}
+   /* .butter-home-login-remember label:after{top:4px;left: -27px;}*/
+	.mb-ajaxsuite-popup-wrapper .mb-register-popup, .mb-ajaxsuite-popup-wrapper .mb-forgetpassword-popup { padding: 20px 25px 10px;}
+}
+@media only screen and (max-width: 480px){
+	.mb-ajaxsuite-popup-wrapper { width: 100%;}
+   /* .butter-home-login-remember label:after{top:4px;left: -27px;}*/
+	
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {/*.butter-home-login-remember label:after{top:4px!important;*/} }
