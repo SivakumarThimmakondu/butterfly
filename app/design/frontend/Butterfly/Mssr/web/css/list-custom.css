@@ -127,11 +127,16 @@ button.btn:hover{     background: #353f49 !important; border: 1px solid #353f49 
     border: 1px solid #000;
     position: absolute;
     top: 0;
-    left: 0;     margin: 0;
-    /*opacity: 0; */    z-index: 9;     cursor: pointer;}
-.mb-register-popup .news-check input[ type="checkbox"]:checked ~ label:after{ content: "✔"; background:#a40033; color:#fff; text-align:center; border-color:#a40033;}
+    left: 0; margin: 0;     padding: 0.5em;
+    -webkit-appearance: none;
+    /*opacity: 0; */    z-index: 9;  cursor: pointer;}
+.mb-register-popup .news-check input[ type="checkbox"]:checked ~ label:after{/* content: "✔"; background:#a40033; color:#fff; text-align:center; border-color:#a40033;*/}
 .btn-sign-up{     padding: 15px 15px !important;}
 h3.customer-headeing{     margin-top: 0;}
+.mb-register-popup .news-check input[ type="checkbox"]:checked:before {content: "✔"; background:#a40033; position: absolute;
+    width: 15px;
+    height: 15px;color:#fff; text-align:center; border-color:#a40033; top: 0px;
+    left: 0;}
 .but-home-login .input-group input{ border-bottom:1px solid #000; width: 100%;}
 .mb-login-form-register .row >div.col-md-6{     margin-right: 5%;}
 .mb-login-form-register .row >div.col-md-6:nth-child(2n){ margin-right:0;}
@@ -173,9 +178,15 @@ h3.customer-headeing{     margin-top: 0;}
     cursor: pointer;
     max-width: 20px !important;
     opacity: 9 !important;}*/
-    .butter-home-login-remember input[ type="radio"]:checked{     background: #a40033 url('../images/tick.jpg') center;
-    /*background: #a40033;*/
+    .butter-home-login-remember input[ type="radio"]:checked:after{     
+    background: #a40033;
     color: #fff;
+    position: absolute;
+    content: "✔"!important;
+    width: 15px;
+    height: 15px;
+    left: 31px;
+    margin-top: -8px;
     text-align: center;
     border-color: #a40033;     max-width: 20px !important;
     font-size: 11px !important; font-weight:normal;}
@@ -291,10 +302,15 @@ a:hover{ color:#929e1e; text-decoration:none;}
 	.mb-login-popup .cus-home-reg{     margin-top: 0px !important;}
    /* .butter-home-login-remember label:after{top:4px;left: -27px;}*/
 	.mb-ajaxsuite-popup-wrapper .mb-register-popup, .mb-ajaxsuite-popup-wrapper .mb-forgetpassword-popup { padding: 20px 25px 10px;}
+    .butter-home-login-remember input[ type="radio"]:checked:after{margin-left: 51px;}
 }
 @media only screen and (max-width: 480px){
 	.mb-ajaxsuite-popup-wrapper { width: 100%;}
    /* .butter-home-login-remember label:after{top:4px;left: -27px;}*/
 	
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {/*.butter-home-login-remember label:after{top:4px!important;*/} }
+@media only screen and (min-width: 768px) and (max-width: 812px) {
+.butter-home-login-remember input[ type="radio"]:checked:before{
+    margin-left: 31px;
+}
+/*.butter-home-login-remember label:after{top:4px!important;}*/ }
