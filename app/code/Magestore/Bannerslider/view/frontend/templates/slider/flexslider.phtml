@@ -152,11 +152,11 @@ echo '</pre>';
                             </a>
                             <?php /*if($banner->getCaption()): ?><div class="flex-caption"><?php echo $banner->getCaption(); ?></div><?php endif; */?>
                             <div class="ban-con-outer">
-                                <h2 class="banner-title">World's best selling <br>OLED Brand</h2>
-                                <p class="con">Experience nothing but the best with<br> <span>LG OLED AI</span> </p>
+                                <h2 class="banner-title"><?php echo $banner->getImageAlt() ?></h2>
+                                <p class="con"><?php echo $banner->getCaption() ?> </p>
                                 <div class="ban-button">
-                                    <a href="#">learn more</a>
-                                    <a href="#">buy now</a>
+                                    <a href="<?php echo $banner->getClickUrl() ?>">learn more</a>
+                                    <a href="<?php echo $banner->getClickUrl() ?>">buy now</a>
                                 </div>
                             </div>
                         </li>
@@ -168,14 +168,14 @@ echo '</pre>';
                                 <img alt="<?php echo $banner->getImageAlt() ?>"  src="<?php echo $block->getBannerImageUrl($banner) ?>"/>
                             </a>
                             <?php /*if($banner->getCaption()): ?><div class="flex-caption"><?php echo $banner->getCaption(); ?></div><?php endif;*/ ?>
-                             <div class="ban-con-outer">
-                                <h2 class="banner-title">World's best selling <br>OLED Brand</h2>
-                                <p class="con">Experience nothing but the best with<br> <span>LG OLED AI</span> </p>
+                              <div class="ban-con-outer">
+                                <h2 class="banner-title"><?php echo $banner->getImageAlt() ?></h2>
+                                <p class="con"><?php echo $banner->getCaption() ?> </p>
                                 <div class="ban-button">
-                                    <a href="#">learn more</a>
-                                    <a href="#">buy now</a>
+                                    <a href="<?php echo $banner->getClickUrl() ?>">learn more</a>
+                                    <a href="<?php echo $banner->getClickUrl() ?>">buy now</a>
                                 </div>
-                            </div> 
+                            </div>
                         </li>
                         <?php endif; ?>
                     <?php endforeach ?>
