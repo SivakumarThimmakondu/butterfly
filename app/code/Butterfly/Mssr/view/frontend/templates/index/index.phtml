@@ -1,7 +1,12 @@
 <?php
 $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-$catId = 5; // Parent Category ID
-$subcategory = $objectManager->create('Magento\Catalog\Model\Category')->load($catId);
+$catId = $objectManager->create('Magento\Catalog\Model\Category')->getCollection()
+->addFieldToFilter('name','offer')
+->setPageSize(1);
+if($catId->getSize()){
+  $categoryId= $catId->getFirstItem()->getId();
+}
+$subcategory = $objectManager->create('Magento\Catalog\Model\Category')->load($categoryId);
 $subcats = $subcategory->getChildrenCategories();
 $_helper = $this->helper('Magento\Catalog\Helper\Output');
 $store = $objectManager->get('Magento\Store\Model\StoreManagerInterface')->getStore();
