@@ -85,7 +85,7 @@ $listBlock = $objectManager->get('\Magento\Catalog\Block\Product\ListProduct');
              echo '</pre>';
              //echo "test";
              //exit; */
-             
+
              //Display Add to cart functions
              $addToCartUrl =  $listBlock->getAddToCartUrl($product);
              ?>
@@ -107,7 +107,7 @@ $listBlock = $objectManager->get('\Magento\Catalog\Block\Product\ListProduct');
                     <?php echo $block->getBlockHtml('formkey')?>
                     <div class="btn">
                         <button type="submit" title="Add to Cart" class="action tocart primary">
-                            <span>Add to Cart</span>
+                            <span>Buy Now</span>
                         </button>
                     </div>   
                  </form>
@@ -141,6 +141,7 @@ $listBlock = $objectManager->get('\Magento\Catalog\Block\Product\ListProduct');
           </div>
 
           <p class="offer-con">Eid in July prices available now. Save upto <br/>$3000 on selected signature product.</p>
+          <a href="#">learn more</a>
         </div>
         <!-- right end --->
 
