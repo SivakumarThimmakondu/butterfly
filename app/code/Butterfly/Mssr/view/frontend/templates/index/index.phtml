@@ -1,13 +1,19 @@
 <?php
 $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-$catId = 5; // Parent Category ID
-$subcategory = $objectManager->create('Magento\Catalog\Model\Category')->load($catId);
+$catId = $objectManager->create('Magento\Catalog\Model\Category')->getCollection()
+->addFieldToFilter('name','offer')
+->setPageSize(1);
+if($catId->getSize()){
+  $categoryId= $catId->getFirstItem()->getId();
+}
+$subcategory = $objectManager->create('Magento\Catalog\Model\Category')->load($categoryId);
 $subcats = $subcategory->getChildrenCategories();
 $_helper = $this->helper('Magento\Catalog\Helper\Output');
 $store = $objectManager->get('Magento\Store\Model\StoreManagerInterface')->getStore();
 
-$objectManager = \Magento\Framework\App\ObjectManager::getInstance(); // Instance of Object Manager
 $priceHelper = $objectManager->create('Magento\Framework\Pricing\Helper\Data');
+$listBlock = $objectManager->get('\Magento\Catalog\Block\Product\ListProduct');
+
 
 ?>
 
@@ -26,7 +32,7 @@ $priceHelper = $objectManager->create('Magento\Framework\Pricing\Helper\Data');
         $i = 1;
         foreach ($subcats as $subcat) {
        
-        $_category = $objectManager->create('Magento\Catalog\Model\Category')->load($subcat->getId());
+       $_category = $objectManager->create('Magento\Catalog\Model\Category')->load($subcat->getId());
        $_outputhelper = $this->helper('Magento\Catalog\Helper\Output');
         $subcaturl = $subcat->getUrl();
         $_imgHtml = '';
@@ -72,29 +78,40 @@ $priceHelper = $objectManager->create('Magento\Framework\Pricing\Helper\Data');
           <div class="offer-tab-con-desk">
              <div class="left">
           <ul>
+            <?php foreach ($categoryProducts as $product) { ?>
+             <?php 
+            /* echo '<pre>';
+             print_r($product->getData()); 
+             echo '</pre>';
+             //echo "test";
+             //exit; */
 
-         <?php 
-
-         foreach ($categoryProducts as $product) { ?>
-          
-         
-       <?php 
-       /*echo '<pre>';
-       print_r($product->getData()); 
-       echo '</pre>';*/
-       ?>
+             //Display Add to cart functions
+             $addToCartUrl =  $listBlock->getAddToCartUrl($product);
+             ?>
             <li>
               <div class="left-inn">
-                <img src=" <?php echo $imageUrl = $store->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . 'catalog/product' . $product->getImage(); ?>" alt="#"/>
-                                  
-
-                                
-                            
-                <p class="title">
-                 <?php $price = $product->getSaveprice();
-                       $formattedPrice = $priceHelper->currency($price, true, false);
+                <a href="<?= /* @escapeNotVerified */ $product->getProductUrl() ?>">
+                  <img src=" <?php echo $imageUrl = $store->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . 'catalog/product' . $product->getImage(); ?>" alt="#"/>
+                 </a>                 
+                 <p class="title">
+                 <?php 
+                    $price = $product->getSaveprice();
+                    $formattedPrice = $priceHelper->currency($price, true, false);
                  ?>
-                  <?php echo "Save up to" . $formattedPrice;   ?></p>
+                  <?php echo "Save up to" . $formattedPrice;   ?>
+                    
+                  </p>
+
+                  <form data-role="tocart-form" action="<?php echo $addToCartUrl; ?>" method="post"> 
+                    <?php echo $block->getBlockHtml('formkey')?>
+                    <div class="btn">
+                        <button type="submit" title="Add to Cart" class="action tocart primary">
+                            <span>Buy Now</span>
+                        </button>
+                    </div>   
+                 </form>
+              
               </div>
             </li>
            
@@ -114,15 +131,17 @@ $priceHelper = $objectManager->create('Magento\Framework\Pricing\Helper\Data');
         </div>
         <!-- right section start -->
         <?php foreach ($categoryLastProducts as $lastproducts){
-
+           $imageUrl = $store->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . 'catalog/product' . $lastproducts->getImage();
         } ?>
           <div class="right">
           <div class="offer-img">
-             <img src=" <?php echo $imageUrl = $store->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . 'catalog/product' . $lastproducts->getImage(); ?>" alt="#"/>
-              
+             <a href="<?= /* @escapeNotVerified */ $product->getProductUrl() ?>">
+                 <img src=" <?php echo $imageUrl; ?>" alt="#"/>
+              </a>
           </div>
 
           <p class="offer-con">Eid in July prices available now. Save upto <br/>$3000 on selected signature product.</p>
+          <a href="#">learn more</a>
         </div>
         <!-- right end --->
 
