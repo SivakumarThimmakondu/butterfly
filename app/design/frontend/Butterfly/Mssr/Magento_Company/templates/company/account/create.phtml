@@ -14,7 +14,7 @@
  * @var $block \Magento\Company\Block\Company\Account\Create
  */
 ?>
-<div class="registration-outer cms-container">
+<div class="registration-outer cms-container dealer">
 <form class="form create account form-create-account"
       action="<?= /* @noEscape */ $block->getPostActionUrl() ?>"
       method="post" id="form-validate"
@@ -28,15 +28,15 @@
           <span><?= $block->escapeHtml(__('TYPE OF COMPANY')) ?></span>
         </legend>
         <div class="field companytype">
-         <label><input type="radio" name="company[customer_group_id]" checked value="4"><span class="cus-radio-btn"></span> <span>Dealer</span></label>
+         <label><input type="radio" name="company[customer_group_id]" checked class="dealercheck" value="4"><span class="cus-radio-btn"></span> <span>Dealer</span></label>
             <label><input type="radio" name="company[customer_group_id]" value="5"><span class="cus-radio-btn"></span> <span>Corporate</span></label>
              <label><input type="radio" name="company[customer_group_id]" value="6"><span class="cus-radio-btn"></span> <span>Employee</span></label>        
         </div>
       </div>
     </fieldset>
       <div class="company-frm-outer">
-        <div class="company-frm dealer">
-           <fieldset class="fieldset create info account">
+        <div class="company-frm">
+           <fieldset class="fieldset create info">
           <?= $block->getLayout()->createBlock('Magento\Customer\Block\Widget\Name')
             ->setObject($block->getFormData())
             ->setNoWrap(true)
@@ -100,7 +100,7 @@
         <?= $block->getChildHtml('form.additional.info') ?>
     </fieldset>
       </div>
-        <div class="company-frm dealer">
+        <div class="company-frm">
            <fieldset class="fieldset info">
        
        <div class="field company-name _required">
@@ -223,7 +223,7 @@
     </fieldset>
       </div>
 
-        <div class="company-frm dealer">
+        <div class="company-frm">
           <fieldset class="fieldset info">      
            <ul>
             <li class="field company-name _required">
@@ -252,12 +252,42 @@
        </div>
     </fieldset>
      </div>
-      
+      </div>
+    
+   <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action save primary" title="<?= $block->escapeHtml(__('Submit')) ?>">
+                <span><?= $block->escapeHtml(__('Submit')) ?></span>
+            </button>
+        </div>
+    </div>
 
+  </form>
+</div>
 
-
-        <div class="company-frm corporate">
-           <fieldset class="fieldset create info account">
+<div class="registration-outer cms-container corporate">
+<form class="form create account form-create-account"
+      action="<?= /* @noEscape */ $block->getPostActionUrl() ?>"
+      method="post" id="form-validate"
+      enctype="multipart/form-data"
+      autocomplete="off">
+    <?= $block->getBlockHtml('formkey') ?>
+    <?= $block->getBlockHtml('formkey') ?>
+    <fieldset class="fieldset info">
+      <div class="companytype-outer">
+        <legend class="legend">
+          <span><?= $block->escapeHtml(__('TYPE OF COMPANY')) ?></span>
+        </legend>
+        <div class="field companytype">
+         <label><input type="radio" name="company[customer_group_id]" value="4"><span class="cus-radio-btn"></span> <span>Dealer</span></label>
+            <label><input type="radio" name="company[customer_group_id]" checked class="corporatecheck" value="5"><span class="cus-radio-btn"></span> <span>Corporate</span></label>
+             <label><input type="radio" name="company[customer_group_id]" value="6"><span class="cus-radio-btn"></span> <span>Employee</span></label>        
+        </div>
+      </div>
+    </fieldset>
+      <div class="company-frm-outer">
+        <div class="company-frm">
+           <fieldset class="fieldset create info">
           <?= $block->getLayout()->createBlock('Magento\Customer\Block\Widget\Name')
             ->setObject($block->getFormData())
             ->setNoWrap(true)
@@ -334,7 +364,7 @@
         <?= $block->getChildHtml('form.additional.info') ?>
     </fieldset>
       </div>
-        <div class="company-frm corporate">
+        <div class="company-frm">
            <fieldset class="fieldset info">
        
        <div class="field company-name _required">
@@ -457,7 +487,7 @@
     </fieldset>
       </div>
 
-        <div class="company-frm corporate">
+        <div class="company-frm">
           <fieldset class="fieldset info">      
        <ul>
             <li class="field company-name _required">
@@ -499,7 +529,42 @@
      </div>
       
 
-        <div class="company-frm employee">
+      </div>
+    
+   <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action save primary" title="<?= $block->escapeHtml(__('Submit')) ?>">
+                <span><?= $block->escapeHtml(__('Submit')) ?></span>
+            </button>
+        </div>
+    </div>
+
+  </form>
+</div>   
+
+
+<div class="registration-outer cms-container employee">
+<form class="form create account form-create-account"
+      action="<?= /* @noEscape */ $block->getPostActionUrl() ?>"
+      method="post" id="form-validate"
+      enctype="multipart/form-data"
+      autocomplete="off">
+    <?= $block->getBlockHtml('formkey') ?>
+    <?= $block->getBlockHtml('formkey') ?>
+    <fieldset class="fieldset info">
+      <div class="companytype-outer">
+        <legend class="legend">
+          <span><?= $block->escapeHtml(__('TYPE OF COMPANY')) ?></span>
+        </legend>
+        <div class="field companytype">
+         <label><input type="radio" name="company[customer_group_id]" value="4"><span class="cus-radio-btn"></span> <span>Dealer</span></label>
+            <label><input type="radio" name="company[customer_group_id]" value="5"><span class="cus-radio-btn"></span> <span>Corporate</span></label>
+             <label><input type="radio" name="company[customer_group_id]" class="employeecheck" checked value="6"><span class="cus-radio-btn"></span> <span>Employee</span></label>        
+        </div>
+      </div>
+    </fieldset>
+      <div class="company-frm-outer">
+        <div class="company-frm">
            <fieldset class="fieldset create info account">
           <?= $block->getLayout()->createBlock('Magento\Customer\Block\Widget\Name')
             ->setObject($block->getFormData())
@@ -564,7 +629,7 @@
         <?= $block->getChildHtml('form.additional.info') ?>
     </fieldset>
       </div>
-       <div class="company-frm employee">
+       <div class="company-frm">
           <fieldset class="fieldset info">      
        <ul>
             <li class="field company-name _required">
@@ -597,8 +662,6 @@
   </form>
 </div>
 
-   
-
 <script>
     require([
         'jquery',
@@ -621,12 +684,14 @@
               $(".dealer").hide();
               $(".employee").hide();
               $(".corporate").show();
+              $(".corporatecheck").prop("checked",true);
            }
            else if($(this).val()=="6")
            {   
                $(".dealer").hide();
                $(".corporate").hide(); 
                $(".employee").show();
+               $(".employeecheck").prop("checked",true);
            }
            else{
             if($(this).val()=="4")
@@ -634,6 +699,7 @@
                 $(".corporate").hide();
                 $(".employee").hide();
                 $(".dealer").show();
+                $(".dealercheck").prop("checked",true);
               }
            }
 
