@@ -224,29 +224,50 @@
       </div>
 
         <div class="company-frm">
-          <fieldset class="fieldset info">      
-           <ul>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Security Question 1" name="" id="#" value="" title="Security Question 1" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Answer" name="" id="#" value="" title="Answer" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Security Question 2" name="" id="#" value="" title="Security Question 2" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Answer" name="" id="#" value="" title="Answer" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-          </ul>
+          <fieldset class="fieldset info">       
+          <div class="field _required">
+            <label class="label">
+                <span><?= $block->escapeHtml(__('Security Question1')) ?></span>
+            </label>
+            <div class="control">
+            <select name="security1" id="myselect" title="<?= $block->escapeHtml(__('Security Question1')) ?>" class="validate-select">
+                <option disabled selected value> -- Please Select Security Questions -- </option>
+                <option value="Which city you born?">Which city you born?</option>
+                <option value="Who is your best friend?">Who is your best friend?</option>
+            </select>
+        </div>
+      </div>
         <div class="field legal-name">
-           <label class="label" for="legal_name">
-               <span><?= $block->escapeHtml(__('Website')) ?></span>
+           <label class="label" for="">
+               <span><?= $block->escapeHtml(__('Answer')) ?></span>
            </label>
            <div class="control">
-               <input type="text" name="company[legal_name]" id="legal_name"
+               <input type="text" name="answer1" id="legal_name"
                       value=""
-                      title="<?= $block->escapeHtml(__('Company Legal Name')) ?>"
+                      title="<?= $block->escapeHtml(__('Answer')) ?>"
+                      class="input-text">
+           </div>
+       </div> 
+       <div class="field _required">
+            <label class="label">
+                <span><?= $block->escapeHtml(__('Security Question2')) ?></span>
+            </label>
+          <div class="control">
+            <select name="security2" id="myselect" title="<?= $block->escapeHtml(__('Security Question2')) ?>" class="validate-select">
+                <option disabled selected value> -- Please Select Security Questions -- </option>
+                <option value="What is your favourite color?">What is your favourite color?</option>
+                <option value="What is your pet name?">What is your pet name?</option>
+            </select>
+        </div> 
+      </div>
+         <div class="field legal-name">
+           <label class="label" for="">
+               <span><?= $block->escapeHtml(__('Answer')) ?></span>
+           </label>
+           <div class="control">
+               <input type="text" name="answer2" id="legal_name"
+                      value=""
+                      title="<?= $block->escapeHtml(__('Answer')) ?>"
                       class="input-text">
            </div>
        </div>
@@ -489,39 +510,49 @@
 
         <div class="company-frm">
           <fieldset class="fieldset info">      
-       <ul>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Security Question 1" name="" id="#" value="" title="Security Question 1" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Answer" name="" id="#" value="" title="Answer" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Security Question 2" name="" id="#" value="" title="Security Question 2" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Answer" name="" id="#" value="" title="Answer" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-          </ul>
-            <div class="field legal-name">
-            <label class="label" for="legal_name">
-                <span><?= $block->escapeHtml(__('Number Of Employees')) ?></span>
+           <div class="field _required">
+            <label class="label">
+                <span><?= $block->escapeHtml(__('Security Question1')) ?></span>
             </label>
             <div class="control">
-                <input type="number" name="company[legal_name]" id="legal_name"
-                       value=""
-                       title="<?= $block->escapeHtml(__('Company Legal Name')) ?>"
-                       class="input-text">
-            </div>
+            <select name="security1" id="myselect" title="<?= $block->escapeHtml(__('Security Question1')) ?>" class="validate-select">
+                <option disabled selected value> -- Please Select Security Questions -- </option>
+                <option value="Which city you born?">Which city you born?</option>
+                <option value="Who is your best friend?">Who is your best friend?</option>
+            </select>
         </div>
+      </div>
         <div class="field legal-name">
-           <label class="label" for="legal_name">
-               <span><?= $block->escapeHtml(__('Website')) ?></span>
+           <label class="label" for="">
+               <span><?= $block->escapeHtml(__('Answer')) ?></span>
            </label>
            <div class="control">
-               <input type="text" name="company[legal_name]" id="legal_name"
+               <input type="text" name="answer1" id="legal_name"
                       value=""
-                      title="<?= $block->escapeHtml(__('Company Legal Name')) ?>"
+                      title="<?= $block->escapeHtml(__('Answer')) ?>"
+                      class="input-text">
+           </div>
+       </div> 
+       <div class="field _required">
+            <label class="label">
+                <span><?= $block->escapeHtml(__('Security Question2')) ?></span>
+            </label>
+          <div class="control">
+            <select name="security2" id="myselect" title="<?= $block->escapeHtml(__('Security Question2')) ?>" class="validate-select">
+                <option disabled selected value> -- Please Select Security Questions -- </option>
+                <option value="What is your favourite color?">What is your favourite color?</option>
+                <option value="What is your pet name?">What is your pet name?</option>
+            </select>
+        </div> 
+      </div>
+         <div class="field legal-name">
+           <label class="label" for="">
+               <span><?= $block->escapeHtml(__('Answer')) ?></span>
+           </label>
+           <div class="control">
+               <input type="text" name="answer2" id="legal_name"
+                      value=""
+                      title="<?= $block->escapeHtml(__('Answer')) ?>"
                       class="input-text">
            </div>
        </div>
@@ -631,22 +662,52 @@
       </div>
        <div class="company-frm">
           <fieldset class="fieldset info">      
-       <ul>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Security Question 1" name="" id="#" value="" title="Security Question 1" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Answer" name="" id="#" value="" title="Answer" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Security Question 2" name="" id="#" value="" title="Security Question 2" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-            <li class="field company-name _required">
-              <input type="text" placeholder="Answer" name="" id="#" value="" title="Answer" class="input-text" data-validate="#" autocomplete="off"/>
-            </li>
-          </ul>
-         
-      
+        <div class="field _required">
+            <label class="label">
+                <span><?= $block->escapeHtml(__('Security Question1')) ?></span>
+            </label>
+            <div class="control">
+            <select name="security1" id="myselect" title="<?= $block->escapeHtml(__('Security Question1')) ?>" class="validate-select">
+                <option disabled selected value> -- Please Select Security Questions -- </option>
+                <option value="Which city you born?">Which city you born?</option>
+                <option value="Who is your best friend?">Who is your best friend?</option>
+            </select>
+        </div>
+      </div>
+        <div class="field legal-name">
+           <label class="label" for="">
+               <span><?= $block->escapeHtml(__('Answer')) ?></span>
+           </label>
+           <div class="control">
+               <input type="text" name="answer1" id="legal_name"
+                      value=""
+                      title="<?= $block->escapeHtml(__('Answer')) ?>"
+                      class="input-text">
+           </div>
+       </div> 
+       <div class="field _required">
+            <label class="label">
+                <span><?= $block->escapeHtml(__('Security Question2')) ?></span>
+            </label>
+          <div class="control">
+            <select name="security2" id="myselect" title="<?= $block->escapeHtml(__('Security Question2')) ?>" class="validate-select">
+                <option disabled selected value> -- Please Select Security Questions -- </option>
+                <option value="What is your favourite color?">What is your favourite color?</option>
+                <option value="What is your pet name?">What is your pet name?</option>
+            </select>
+        </div> 
+      </div>
+         <div class="field legal-name">
+           <label class="label" for="">
+               <span><?= $block->escapeHtml(__('Answer')) ?></span>
+           </label>
+           <div class="control">
+               <input type="text" name="answer2" id="legal_name"
+                      value=""
+                      title="<?= $block->escapeHtml(__('Answer')) ?>"
+                      class="input-text">
+           </div>
+       </div>
     </fieldset>
      </div>
       </div>
