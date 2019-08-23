@@ -1992,10 +1992,11 @@ margin-bottom: 0px !important;  background: none !important; flex-shrink: 0 !imp
 
 
 .header.links{ margin:0 0; padding: 0 0; }
-.header.links li{  float: left; width: 34px; height: 30px;list-style: none; overflow: hidden;}
-.header.links li a,.header .minicart-wrapper a.showcart{ display: block; width: 34px; height: 30px;text-indent: 99px;line-height: 90px;  background-size: 100% !important;}
+.header.links li{  float: left; list-style: none; overflow: hidden;}
+
+.header.links li a{ display: block; width: text-indent: 99px;line-height: 90px;  background-size: 100% !important;}
+.header .minicart-wrapper a.showcart{ display: block; width: 34px; height: 30px;text-indent: 99px;line-height: 90px;  background-size: 100% !important;}
 .header.links li.wishlist a{ background: url(../images/sprite-icon.png) no-repeat 4px -188px;}
-.header.links li.authorization-link a{  background: url(../images/sprite-icon.png) no-repeat 4px -227px;}
 .header .minicart-wrapper a.showcart:before{  display: none;}
 .header .minicart-wrapper a.showcart{ background: url(../images/sprite-icon.png) no-repeat 3px -31px;}
 .search-outer .block-search .block-title{  }
@@ -2597,6 +2598,15 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 .block-search .action.search:before{ font-size: 0; background: url(../images/sprite-icon.png) no-repeat 5px 3px;
 width: 34px; height: 30px; display: block; background-size: 100%; }
 
+.page-header .panel.wrapper{
+    float:right;
+    background-color: #fff !important;
+    color:#000 !important;
+    border-bottom:none !important;
+}
+.header.panel > .header.links > li > a {
+
+    color: #000 !important;}
 /** home page offer section ***/
 
 .cms-index-index .page-title-wrapper{display:none !important;}
