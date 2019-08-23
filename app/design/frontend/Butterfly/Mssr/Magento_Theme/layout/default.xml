@@ -8,22 +8,31 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="3columns" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
    <update handle="default_head_blocks" />
    <body>
-      <referenceBlock name="register-link" remove="true" />
-      <referenceBlock name="my-account-link" remove="true" />
-      <referenceBlock name="header.panel.wrapper" remove="true" />
-      <referenceBlock name="header-wrapper" remove="true" />
+      <!--<referenceBlock name="register-link" remove="true" />
+      <referenceBlock name="my-account-link" remove="true" />-->
+      <!--<referenceBlock name="header.panel.wrapper" remove="true" />-->
+
+      <!--<referenceBlock name="header-wrapper" remove="true" />-->
       <referenceBlock name="navigation.sections" remove="true" />
       <move element="logo" destination="mycustom3.div" before="-" />
-      <move element="catalog.topnav" destination="mycustom3.div" after="logo" />
+       <move element="header.panel.wrapper" destination="mycustom3.div" after="logo" />
+      <move element="catalog.topnav" destination="mycustom3.div" after="header.panel.wrapper" />
       <move element="top.search" destination="mycustom4.div" before="-" />
-      <move element="top.links" destination="mycustom4.div" after="top.search" />
-      <move element="minicart" destination="mycustom4.div" after="top.links" />
+      <!--<move element="top.links" destination="mycustom4.div" after="top.search" />-->
+      <move element="header-wrapper" destination="mycustom4.div" after="top.search" />
+      <move element="minicart" destination="mycustom4.div" after="header-wrapper" />
       <move element="mycustom4.div" destination="mycustom3.div" after="catalog.topnav" />
       
       <referenceContainer name="header.container">
          <container name="mycustom3.div" htmlTag="div" htmlClass="header" />
          <container name="mycustom4.div" htmlTag="div" htmlClass="search-outer" />
       </referenceContainer>
+
+
+      
+
+
+
       <referenceContainer name="footer-container" htmlClass="site_footer_wrap scheme_dark">
          <container name="footer" as="footer" label="Page Footer" htmlTag="div">
             <block class="Magento\Theme\Block\Html\Footer" name="butterflyfooter" template="Magento_Theme::html/footer.phtml" />

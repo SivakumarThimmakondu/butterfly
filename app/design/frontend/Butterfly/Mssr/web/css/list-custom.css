@@ -69,8 +69,8 @@ body{ font-family:"LG Smart", sans-serif !important;}
 .butterfly-signup .but-home-login label{     font-size: 18px; font-family: 'LG Smart'; left: 4px;}
 .mb-login-popup .butterfly-signup .but-home-login label.label-up,.mb-register-popup .butterfly-signup .but-home-login label.label-up{top: -20px;     transition: .2s ease all; -moz-transition: .2s ease all; -webkit-transition: .2s ease all;}
 .rqr{color:#25b4f0; margin-left: 4px !important;}
-.butter-home-login-remember{ margin-bottom: 25px;}
-.register{ padding:20px 40px !important;}
+.butter-home-login-remember{ margin-bottom: 25px;     padding-left: 0 !important;}
+.register{ padding: 10px 20px !important;}
 .butterfly-signup .form-group input:focus {box-shadow: none !important; outline:0 !important;}
 .cus-social-link:after{ content:""; display:table; clear:both;}
 .cus-social-link{ text-align:center;     margin-top: 0; }
@@ -85,34 +85,37 @@ body{ font-family:"LG Smart", sans-serif !important;}
 .cus-social-link ul li a:hover{ text-decoration:none; background:#a40033; color:#fff;}
 .cus-social-link ul li a:hover:after{ background:#fff;}
 .cus-social-link ul li:hover{ border-color:#a40033;}
-.mb-ajaxsuite-popup-wrapper{     width: 600px;}
-.register{     max-width: 600px !important;}
+.mb-ajaxsuite-popup-wrapper{ width: auto; background: #fff !important; padding: 20px;}
+.register{  max-width: none !important; width: 600px !important;}
 .mb-login-popup .cus-home-reg{         margin-top: 10px !important; text-align: center; float: none;}
 button.btn{ background: #a40033 !important; border: 1px solid #a40033!important;     font-family: 'LG Smart', sans-serif !important;
     font-size: 18px !important;
     text-transform: uppercase;}
 button.btn:hover{     background: #353f49 !important; border: 1px solid #353f49 !important;}
-.butter-home-login-remember input[type=checkbox] + label{font-size: 14px !important; padding: 8px 28px 0 0;}
+.butter-home-login-remember input[type=checkbox] + label{font-size: 14px !important;     padding: 0px 28px 0 0; display: inline-block; vertical-align: top;}
 .butter-home-login-remember input[type=radio]{ border: 1px solid #000;padding: 0.5em; -webkit-appearance: none;}
 .butter-home-login-remember input[type=radio]:checked {
   background: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==) no-repeat center center;
   background-size: 9px 9px;
 }
 
-.butter-home-login-remember input[type=radio]:focus {
+.butter-home-login-remember input[type=radio]:focus,.mb-register-popup .news-check input[ type="checkbox"]:focus{
   outline-color: transparent;
+  box-shadow: none !important; outline:0 !important;
 }
+
 .con-with{ color: #000; font-size: 16px; margin-bottom: 8px;}
 /*----------registration popup----------*/
-.mb-ajaxsuite-popup-wrapper .mb-register-popup, .mb-ajaxsuite-popup-wrapper .mb-forgetpassword-popup{ padding:20px 40px 10px;}
+.mb-ajaxsuite-popup-wrapper .mb-forgetpassword-popup{     padding: 10px 20px 10px; width: 500px;}
+.mb-ajaxsuite-popup-wrapper .mb-register-popup{ width:600px; padding:0px 20px 0px;}
 .mb-register-popup .cus-reg-sect-title{     margin-left: 0;     margin-bottom: 9px !important;}
-.mb-ajaxsuite-popup-wrapper .mb-register-popup .mb-ajaxsuite-popup-border{     padding-top: 0;}
+.mb-ajaxsuite-popup-wrapper .mb-register-popup .mb-ajaxsuite-popup-border{     padding-top: 0; padding-bottom: 0;}
 .mb-register-popup h4.customer-reg-disc{     color: #00adef; margin-top: 10px; margin-bottom: 10px;}
 .mb-register-popup .but-home-login label{ position: absolute; top: 6px; z-index: 9; color: #000;}
 .mb-register-popup .input-group{ margin: 5px 0 5px;}
 .mb-register-popup .news-check{     margin-bottom: 20px;     position: relative;}
 .input-group input{     border-bottom: 1px solid #000; }
-.mb-register-popup .news-check .label{ padding-left: 30px;     font-size: 14px; font-weight: 600; color: #000;}
+.mb-register-popup .news-check .label{ padding-left: 23px;     font-size: 14px; font-weight: 600; color: #000; display: inline-block; vertical-align: top;}
 /*.mb-register-popup .news-check .label:after{ content: "";
     display: block;
     clear: both;
@@ -126,17 +129,24 @@ button.btn:hover{     background: #353f49 !important; border: 1px solid #353f49 
     height: 15px;
     border: 1px solid #000;
     position: absolute;
-    top: 0;
+	top: 2px;
     left: 0; margin: 0;     padding: 0.5em;
     -webkit-appearance: none;
     /*opacity: 0; */    z-index: 9;  cursor: pointer;}
 .mb-register-popup .news-check input[ type="checkbox"]:checked ~ label:after{/* content: "✔"; background:#a40033; color:#fff; text-align:center; border-color:#a40033;*/}
 .btn-sign-up{     padding: 15px 15px !important;}
 h3.customer-headeing{     margin-top: 0;}
-.mb-register-popup .news-check input[ type="checkbox"]:checked:before {content: "✔"; background:#a40033; position: absolute;
-    width: 15px;
-    height: 15px;color:#fff; text-align:center; border-color:#a40033; top: 0px;
-    left: 0;}
+.mb-register-popup .news-check input[ type="checkbox"]:checked:before {    content: "✔";
+    background: #a40033;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    text-align: center;
+    border-color: #a40033;
+    top: -1px;
+    left: -1px;
+    font-size: 11px;}
 .but-home-login .input-group input{ border-bottom:1px solid #000; width: 100%;}
 .mb-login-form-register .row >div.col-md-6{     margin-right: 5%;}
 .mb-login-form-register .row >div.col-md-6:nth-child(2n){ margin-right:0;}
@@ -183,14 +193,14 @@ h3.customer-headeing{     margin-top: 0;}
     color: #fff;
     position: absolute;
     content: "✔"!important;
-    width: 15px;
-    height: 15px;
-    left: 31px;
+    width: 16px;
+    height: 16px;
+    left: 0px;
     margin-top: -8px;
     text-align: center;
     border-color: #a40033;     max-width: 20px !important;
     font-size: 11px !important; font-weight:normal;}
-	.butter-home-login-remember{     margin-bottom: 8px !important;}
+	.butter-home-login-remember{     margin-bottom: 8px !important; padding-left: 0 !important;}
 	.input-group input{ font-size: 14px !important;}
 	.but-home-login .input-group input{     margin: 1px 0px !important; z-index: 9 !important;
     position: relative;
@@ -288,6 +298,44 @@ a:hover{ color:#929e1e; text-decoration:none;}
   color: #000 !important;
 }
 
+.mb-ajaxsuite-popup-wrapper .mb-login-popup-title.success{ position:relative; font-size:0;     padding-top: 30px;}
+.mb-ajaxsuite-popup-wrapper .mb-login-popup-title .mb-login-popup-title-success:after{ content: "✓";
+    display: block;
+    clear: both;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #8ba54f;
+    color: #8ba54f;
+    font-size: 26px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    line-height: 50px;
+    font-weight: bold;
+    top: 18px;}
+.mb-ajaxsuite-popup-wrapper .mb-login-popup-title .mb-login-popup-title-error:after{ content: "X";
+    display: block;
+    clear: both;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #e02b27;
+    color: #e02b27;
+    font-size: 26px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    line-height: 50px;
+    font-weight: bold;
+    top: 18px;}
+.mb-ajaxsuite-popup-wrapper .mb-ajaxlogin-message-success .mb-message-successs{ font-size: 20px; width: 400px;  margin: 35px auto 20px;}
+.mb-ajaxsuite-popup-wrapper .mb-ajaxlogin-message-error .mb-message-error{ margin: 45px auto 20px; font-size: 20px; width: 400px;}
+.mb-successful-message{     margin-bottom: 30px;}
+.mb-successful-message .message{     color: #00adef; font-size: 16px;}
+.mb-error-message .message{color: #000; font-size: 16px;}
+.mb-ajaxsuite-popup-wrapper .mb-actions-toolbar >.mb-inline{ margin-right:15px;}
+.mb-ajaxsuite-popup-wrapper .mb-actions-toolbar >.mb-inline:last-child{ margin-right:0;}
 
 @media only screen and (max-width: 767px){
 	.register{     width: 100% !important; max-width: 100% !important; padding: 20px !important;}
@@ -301,11 +349,25 @@ a:hover{ color:#929e1e; text-decoration:none;}
 	.mb-ajaxlogin-register .con-with{ text-align: center;}
 	.mb-login-popup .cus-home-reg{     margin-top: 0px !important;}
    /* .butter-home-login-remember label:after{top:4px;left: -27px;}*/
-	.mb-ajaxsuite-popup-wrapper .mb-register-popup, .mb-ajaxsuite-popup-wrapper .mb-forgetpassword-popup { padding: 20px 25px 10px;}
-    .butter-home-login-remember input[ type="radio"]:checked:after{margin-left: 51px;}
+	.mb-ajaxsuite-popup-wrapper .mb-forgetpassword-popup { padding: 10px 20px 10px; width: 90%; }
+	.mb-ajaxsuite-popup-wrapper .mb-register-popup{padding:10px 20px 10px}
+    .butter-home-login-remember input[ type="radio"]:checked:after{margin-left: 0;}
+	.butter-home-login-remember{     position: relative;}
+	.mb-ajaxsuite-popup-wrapper .mb-register-popup{ width: 96%;}
+	.mb-ajaxsuite-popup-wrapper .mb-ajaxlogin-message-success .mb-message-successs,.mb-ajaxsuite-popup-wrapper .mb-ajaxlogin-message-error .mb-message-error{     width: auto;}
 }
 @media only screen and (max-width: 480px){
-	.mb-ajaxsuite-popup-wrapper { width: 100%;}
+	.mb-ajaxsuite-popup-wrapper { width: 80%;}
+	.register{ padding: 0px !important;}
+	.mb-ajaxsuite-popup-wrapper .mb-register-popup{     width: 100%; padding: 0;}
+	.home-cus-sign-in-title h3.home-customer-title{     font-size: 18px;     margin-bottom: 7px;}
+	.butterfly-signup .home-cus-sign-in-title h4.home-customer-small-head{ font-size: 14px;}
+	.mb-ajaxsuite-popup-wrapper .block-customer-login .primary, .mb-ajaxsuite-popup-wrapper .block-new-customer .primary{ padding: 9px 20px; font-size:14px !important; }
+	.con-with{     margin-top: 8px; font-size: 14px;}
+	span.cus-home-reg-not-yet-member{ font-size: 14px;}
+	h3.customer-headeing { font-size: 18px !important;}
+	.btn-sign-up { padding: 10px 15px !important;}
+	.mb-ajaxsuite-popup-wrapper .mb-forgetpassword-popup{     width: 86%;}
    /* .butter-home-login-remember label:after{top:4px;left: -27px;}*/
 	
 }
