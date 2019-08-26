@@ -29,8 +29,8 @@ function buildSliderConfiguration2() {
   }
 
   return {
-    pager: false,
-    controls: true,
+    pager: true,
+    controls: false,
     auto: true,
     slideWidth: 5000,
     startSlide: 0,
@@ -72,6 +72,78 @@ $('.slider-next').click(function () {
 $(window).on("orientationchange resize", configureSlider2);
 // Configure the slider once on page load.
 configureSlider2();
+
+
+
+// Use the conventional $ prefix for variables that hold jQuery objects.
+var $slider1;
+
+// If the only purpose of the windowWidth() function is to set the slide variables,
+// it can be renamed and rewritten to supply the full configuration object instead.
+function buildSliderConfiguration1() {
+  // When possible, you should cache calls to jQuery functions to improve performance.
+  var windowWidth = $(window).width();
+  var numberOfVisibleSlides;
+
+  if (windowWidth < 420) {
+    numberOfVisibleSlides = 1;
+  }
+  else if (windowWidth < 768) {
+    numberOfVisibleSlides = 1;
+  }
+  else if (windowWidth < 1200) {
+    numberOfVisibleSlides = 1;
+  }
+  else {
+    numberOfVisibleSlides = 1;
+  }
+
+  return {
+    pager: true,
+    controls: false,
+    auto: true,
+    slideWidth: 5000,
+    startSlide: 0,
+    nextText: ' ',
+    prevText: ' ',
+    adaptiveHeight: true,
+    moveSlides: 1,
+    slideMargin: 20,
+    minSlides: numberOfVisibleSlides,
+    maxSlides: numberOfVisibleSlides
+  };
+}
+
+// This function can be called either to initialize the slider for the first time
+// or to reload the slider when its size changes.
+function configureSlider1() {
+  var config = buildSliderConfiguration1();
+
+  if ($slider1 && $slider1.reloadSlider) {
+    // If the slider has already been initialized, reload it.
+    $slider1.reloadSlider(config);
+  }
+  else {
+    // Otherwise, initialize the slider.
+    $slider1 = $('.washing-slider').bxSlider(config);
+  }
+}
+
+$('.slider-prev').click(function () {
+  var current = $slider1.getCurrentSlide();
+  $slider1.goToPrevSlide(current) - 1;
+});
+$('.slider-next').click(function () {
+  var current = $slider1.getCurrentSlide();
+  $slider1.goToNextSlide(current) + 1;
+});
+
+// Configure the slider every time its size changes.
+$(window).on("orientationchange resize", configureSlider1);
+// Configure the slider once on page load.
+configureSlider1();
+
+
 
 /** menu tab footer script**/
                 
