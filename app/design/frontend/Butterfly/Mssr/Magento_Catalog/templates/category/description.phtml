@@ -1,0 +1,95 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Category view template
+ *
+ * @var $block \Magento\Catalog\Block\Category\View
+ */
+?>
+<?php if ($_description = $block->getCurrentCategory()->getDescription()): ?>
+    <div class="category-description category-head">
+        <?= /* @escapeNotVerified */ $this->helper('Magento\Catalog\Helper\Output')->categoryAttribute($block->getCurrentCategory(), $_description, 'description') ?>
+    </div>
+<?php endif; ?>
+<div class="emi-cal-outer desktop-view"> 
+		<div class="emi-cal-title">
+			<h3 class="title">EMI CALCULATOR</h3>
+		</div>
+		<div class="emi-filter-outer">
+			<div class="emi-filter-month emi-filter-inr">
+				<div class="emi-filter">
+					<p class="con">MONTH</p>
+					<a href="#" class="ui-slider-handle filter-btn-outer filter-btn-left">
+						<span class="filter-btn"></span>
+						<span class="filter-btn-con">MIN</span>
+					</a>
+					<a href="#" class="ui-slider-handle filter-btn-outer filter-btn-right">
+						<span class="filter-btn"></span>
+						<span class="filter-btn-con">MAX</span>
+					</a>
+				</div>
+			</div>
+			<div class="emi-filter-price emi-filter-inr">
+				<div class="emi-filter">
+					<p class="con">PRICE</p>
+					<a href="#" class="ui-slider-handle filter-btn-outer filter-btn-left">
+						<span class="filter-btn"></span>
+						<span class="filter-btn-con">MIN</span></a>
+					<a href="#" class="ui-slider-handle filter-btn-outer filter-btn-right">
+						<span class="filter-btn"></span>
+						<span class="filter-btn-con">MIN</span>
+					</a>
+				</div>
+			</div>
+			<div class="aply-btn">
+				<button>
+					<span>APPLY</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="emi-cal-outer mob-view"> 
+		<div class="emi-cal-title mob-emi-title">
+			<h3 class="title">EMI CALCULATOR</h3>
+		</div>
+		<div class="emi-filter-outer">
+			<div class="emi-filter-month emi-filter-inr">
+				<div class="emi-filter">
+					<p class="con">MONTH</p>
+					<a href="#" class="ui-slider-handle filter-btn-outer filter-btn-left">
+						<span class="filter-btn"></span>
+						<span class="filter-btn-con">MIN</span>
+					</a>
+					<a href="#" class="ui-slider-handle filter-btn-outer filter-btn-right">
+						<span class="filter-btn"></span>
+						<span class="filter-btn-con">MAX</span>
+					</a>
+				</div>
+			</div>
+			<div class="emi-filter-price emi-filter-inr">
+				<div class="emi-filter">
+					<p class="con">PRICE</p>
+					<a href="#" class="ui-slider-handle filter-btn-outer filter-btn-left">
+						<span class="filter-btn"></span>
+						<span class="filter-btn-con">MIN</span></a>
+					<a href="#" class="ui-slider-handle filter-btn-outer filter-btn-right">
+						<span class="filter-btn"></span>
+						<span class="filter-btn-con">MIN</span>
+					</a>
+				</div>
+			</div>
+			<div class="aply-btn">
+				<button>
+					<span>APPLY</span>
+				</button>
+			</div>
+		</div>
+	</div>
