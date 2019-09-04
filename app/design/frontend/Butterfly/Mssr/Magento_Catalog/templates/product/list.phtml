@@ -59,19 +59,29 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                     <a href="<?= /* @escapeNotVerified */ $_product->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
                         <?= $productImage->toHtml() ?>
                     </a>
+
                     <div class="product details product-item-details">
                         <?php
                             $_productNameStripped = $block->stripTags($_product->getName(), null, true);
                         ?>
+                        <?= $block->getProductDetailsHtml($_product) ?>
                         <strong class="product name product-item-name">
                             <a class="product-item-link"
                                href="<?= /* @escapeNotVerified */ $_product->getProductUrl() ?>">
                                 <?= /* @escapeNotVerified */ $_helper->productAttribute($_product, $_product->getName(), 'name') ?>
                             </a>
                         </strong>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <?= /* @escapeNotVerified */ $block->getProductName($_product) ?>
                         <?= $block->getReviewsSummaryHtml($_product, $templateType) ?>
                         <?= /* @escapeNotVerified */ $block->getProductPrice($_product) ?>
-                        <?= $block->getProductDetailsHtml($_product) ?>
+                        
 
                         <div class="product-item-inner">
                             <div class="product actions product-item-actions"<?= strpos($pos, $viewMode . '-actions') ? $position : '' ?>>
@@ -109,8 +119,8 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                                        class="action more"><?= /* @escapeNotVerified */ __('Learn More') ?></a>
                                 </div>
                             <?php endif; ?>
-                            <span class="i-icon">i</span>
-                        <a href="#" class="action towishlist"><i class="fa">&#xf08a;</i></i></a>
+                           
+                       
                         </div>
                     </div>
                 </div>
