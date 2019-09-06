@@ -10,7 +10,7 @@
         <referenceBlock name="head.components">
             <block class="Magento\Framework\View\Element\Js\Components" name="wishlist_page_head_components" template="Magento_Wishlist::js/components.phtml"/>
         </referenceBlock>
-        <referenceBlock name="header-wrapper">
+        <referenceBlock name="top.links">
             <block class="Magento\Wishlist\Block\Link" name="wish-list-link" after="top.search"/>
               
         </referenceBlock>
