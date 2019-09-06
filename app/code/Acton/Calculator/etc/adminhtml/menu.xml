@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add action="acton_calculator/btu/index" id="Acton_Calculator::acton_calculator_btu" module="Acton_Calculator" parent="Acton::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Btu"/>
+		<add action="acton_calculator/powerton/index" id="Acton_Calculator::acton_calculator_powerton" module="Acton_Calculator" parent="Acton::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Powerton"/>
+		<add action="acton_calculator/insulation/index" id="Acton_Calculator::acton_calculator_insulation" module="Acton_Calculator" parent="Acton::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Insulation"/>
+		<add action="acton_calculator/climate/index" id="Acton_Calculator::acton_calculator_climate" module="Acton_Calculator" parent="Acton::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Climate"/>
+		<add id="Acton::top_level" module="Acton_Calculator" resource="Magento_Backend::content" sortOrder="9999" title="Acton"/>
+		<add action="acton/calculator/index" id="Acton_Calculator::calculator_index" module="Acton_Calculator" parent="Acton::top_level" resource="Acton_Calculator::calculator_index" sortOrder="9999" title="calculator index"/>
+	</menu>
+</config>

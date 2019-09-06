@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Magento_Backend::stores">
+					<resource id="Magento_Backend::stores_settings">
+						<resource id="Magento_Config::config">
+							<resource id="Acton_Calculator::config_acton_calculator" title="calculator"/>
+						</resource>
+					</resource>
+				</resource>
+				<resource id="Acton_Calculator::Btu" sortOrder="10" title="Btu">
+					<resource id="Acton_Calculator::Btu_save" sortOrder="10" title="Save Btu"/>
+					<resource id="Acton_Calculator::Btu_delete" sortOrder="20" title="Delete Btu"/>
+					<resource id="Acton_Calculator::Btu_update" sortOrder="30" title="Update Btu"/>
+					<resource id="Acton_Calculator::Btu_view" sortOrder="40" title="View Btu"/>
+				</resource>
+				<resource id="Acton_Calculator::Powerton" sortOrder="10" title="Powerton">
+					<resource id="Acton_Calculator::Powerton_save" sortOrder="10" title="Save Powerton"/>
+					<resource id="Acton_Calculator::Powerton_delete" sortOrder="20" title="Delete Powerton"/>
+					<resource id="Acton_Calculator::Powerton_update" sortOrder="30" title="Update Powerton"/>
+					<resource id="Acton_Calculator::Powerton_view" sortOrder="40" title="View Powerton"/>
+				</resource>
+				<resource id="Acton_Calculator::Insulation" sortOrder="10" title="Insulation">
+					<resource id="Acton_Calculator::Insulation_save" sortOrder="10" title="Save Insulation"/>
+					<resource id="Acton_Calculator::Insulation_delete" sortOrder="20" title="Delete Insulation"/>
+					<resource id="Acton_Calculator::Insulation_update" sortOrder="30" title="Update Insulation"/>
+					<resource id="Acton_Calculator::Insulation_view" sortOrder="40" title="View Insulation"/>
+				</resource>
+				<resource id="Acton_Calculator::Climate" sortOrder="10" title="Climate">
+					<resource id="Acton_Calculator::Climate_save" sortOrder="10" title="Save Climate"/>
+					<resource id="Acton_Calculator::Climate_delete" sortOrder="20" title="Delete Climate"/>
+					<resource id="Acton_Calculator::Climate_update" sortOrder="30" title="Update Climate"/>
+					<resource id="Acton_Calculator::Climate_view" sortOrder="40" title="View Climate"/>
+				</resource>
+				<resource id="Acton_Calculator::acton" sortOrder="10" title="acton">
+					<resource id="Acton_Calculator::calculator_index" sortOrder="10" title="calculator index"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

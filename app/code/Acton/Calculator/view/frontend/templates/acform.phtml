@@ -1,0 +1,121 @@
+<!--<form action="<?php //echo $block->getFormAction() ?>" method="post">
+    <input name="length" type="text">
+    <input name="breadth" type="text">
+    <input name="height" type="text">
+    <input name="insulation" type="text">
+    <input name="houseage" type="text">
+    <input name="climate" type="text">
+    <input name="occupy" type="text">
+    <input type="submit" value="Send">
+</form>-->
+
+
+
+
+<form id="ajaxacton" action="<?php /* @escapeNotVerified */ echo $block->getFormAction() ?>" method="post"
+     data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>"
+     data-mage-init='{"validation":{}}'>
+<div class="action-calculator-outer">
+		<div class="action-calculator-title">
+			<span class="arrow">></span>
+			<span class="arrow-close">X</span>			
+			<span class="con">AC TON CALCULATOR</span>
+		</div>
+		<div class="action-calculator-body">			
+			<div class="title">
+				<h2>AC TON CALCULATOR</h2>
+			</div>
+			<div class="action-calculator-from">
+				<ul>
+					<li class="size">
+						<label>Size (ft)*:</label>
+						<div>
+							<input class="input-text" type="text" name="length" placeholder="Length" data-validate="{required:true, 'pattern':/^\d+(\.\d{1,2})?$/, 'validate-greater-than-zero':true}"/>
+							<input class="input-text" type="text" name="breadth" placeholder="Breadth"
+                            data-validate="{required:true, 'pattern':/^\d+(\.\d{1,2})?$/, 'validate-greater-than-zero':true}"/>
+						</div>
+					</li>
+					<li class="type">
+						<label>House Age*:</label>
+						<div>
+							<select class="validate-select" name="houseage">
+								<option  value="" selected>--Select--</option>
+								<option  value="Old">Old</option> 
+								<option  value="new">New</option> 							
+							</select>
+						</div>
+					</li>
+					<!-- <li class="sun-ex">
+						<label>Sun Exposeure:</label>
+						<div>
+							<input type="text"/>
+						</div>
+					</li> -->
+					<li class="cli">
+						<label>Climate*:</label>
+						<div>
+							<select class="validate-select" name="climate" >
+								<option value="" selected>--Select--</option> 
+								<option value="Warm" >Warm</option> 
+								<option value="Cold">Cold</option> 							
+							</select>
+						</div>
+					</li>
+					
+				</ul>
+				<ul>
+					<li class="room-cel">
+						<label>Room Ceiling Height (ft)*:</label>
+						<div>
+							<input class="input-text" name="height" type="text" placeholder="Height"
+                             data-validate="{required:true, 'pattern':/^\d+(\.\d{1,2})?$/, 'validate-greater-than-zero':true}"
+                            />							
+						</div>
+					</li>
+					<li class="ins">
+						<label>Insulation Condition*:</label>
+						<div>
+							<select class="validate-select" name="insulation">
+								<option value="" selected>-- Select --</option>								
+								<option value="Poor">Poor</option> 
+								<option value="good">Good</option> 							
+							</select>
+						</div>
+					</li>
+					
+				</ul>
+				<ul class="number-people">
+					<li class="number">
+						<label>Number of People*:</label>
+						<input class="input-text" name="noofpeople" type="text"
+                        data-validate="{required:true, 'pattern':/^\d+(\.\d{1,2})?$/, 'integer':true}"
+                        />
+					</li>
+					<li class="cal-button">
+						<input type="submit" name="submit"/>
+					</li>
+				</ul>				
+				<ul class="calculator-result">				
+					<li class="result">
+						<label>Recommended Tonnage:</label>
+						<span class="recommended-result">1.5 ton</span>
+					</li>		
+				</ul>
+			</div>
+		</div>
+	</div>
+</form>	
+
+
+<?php 
+$ajaxurl = $block->getFormAction();
+?>
+<script type="text/x-magento-init">
+        {
+            "*": {
+                "Acton_Calculator/js/actonajax": {
+                    "AjaxUrl": "<?php echo $ajaxurl; ?>"
+                }
+            }
+        }
+</script>
