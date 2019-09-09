@@ -1992,9 +1992,9 @@ margin-bottom: 0px !important;  background: none !important; flex-shrink: 0 !imp
 
 
 .header.links{ margin:0 0; padding: 0 0; }
-.header.links li{  float: left; list-style: none; overflow: hidden;}
+.header.links li{  /*float: left;*/ display:inline-block; list-style: none; overflow: hidden;     vertical-align: top;}
 
-.header.links li a{ display: block; width: text-indent: 99px;line-height: 90px;  background-size: 100% !important;}
+.header.links li a{ display: block; /*text-indent: 99px;line-height: 90px;*/  background-size: 100% !important;}
 .header .minicart-wrapper a.showcart{ display: block; width: 34px; height: 30px;text-indent: 99px;line-height: 90px;  background-size: 100% !important;}
 .header.links li.wishlist a{ background: url(../images/sprite-icon.png) no-repeat 4px -188px;}
 .header .minicart-wrapper a.showcart:before{  display: none;}
@@ -2008,11 +2008,16 @@ margin-bottom: 0px !important;  background: none !important; flex-shrink: 0 !imp
 width: 34px; height: 30px; display: block; background-size: 100%; }
 .header.links li.wishlist a:hover{ background-position:4px -1089px;}
 .header.links li.authorization-link a:hover{background-position: 4px -1128px;}
-.header .minicart-wrapper a.showcart:hover{     background-position: 4px -914px;}
+.header .minicart-wrapper a.showcart:hover{     background-position: 4.5px -913px;}
 .block-search .action.search:hover:before{ background-position: 5px -872px;}
 .nav-sections .navbar ul li:hover .submenu{ position:absolute; z-index: 9; padding-top: 16px; background: #fff;     left: 833px !important;}
 .nav-sections .navbar ul li:hover .submenu li{ float:none;    border-top: 0.5px solid #c10c3f8f; margin: 0 0 0 0;}
 .nav-sections .navbar ul li:hover a{     color: #c10c3f;}
+
+/*------------260819--------*/
+.header.panel > .header.links > li.customer-welcome button{     display: none;}
+.header.links li.customer-register button.action.switch{ display:none;}
+.search-outer .header.links li #invitation-send-link{ display:none;}
 
 
 /** home page offer section ***/
@@ -2078,6 +2083,45 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 .minicart-wrapper .action.close{ right: 6px; top: 6px;}
 .explore-banner .bx-pager{ display:none;}
 
+.header.links{ margin:0 0; padding: 0 0; }
+/*.header.links li{  float: left; width: 34px; height: 30px;list-style: none; overflow: hidden;}*/
+.header.links li a{}
+.header .minicart-wrapper a.showcart{ display: block; width: 34px; height: 30px;text-indent: 99px;line-height: 90px; background: url(../images/sprite-icon.png) no-repeat 0 0; background-size: 100%;}
+.header.links li.wishlist a{  background-position: 4px -188px; display: block; width: 34px; height: 30px;text-indent: 99px;line-height: 90px;}
+/*.header.links li.authorization-link a{  background-position: 4px -227px;} */
+.header .minicart-wrapper a.showcart:before{  display: none;}
+.header .minicart-wrapper a.showcart{background-position: 4px -30px;}
+.search-outer .block-search .block-title{  }
+.navigation, .breadcrumbs, .page-header .header.panel, .header.content, .footer.content, .page-wrapper > .widget, .page-wrapper > .page-bottom, .block.category.event, .top-container, .page-main{ padding:0; margin: 0; max-width: none; width: 100%; }
+.search-outer .block-search{ width: 120px; }
+.search-outer .block-search input[ type="text"]{ border: 0;  padding: 0 5px;}
+.search-outer .block-search input[ type="text"]:focus{ outline: 0; box-shadow: none; }
+.block-search .action.search:before{ font-size: 0; background: url(../images/sprite-icon.png) no-repeat 5px 3px;
+width: 34px; height: 30px; display: block; background-size: 100%; }
+
+.page-header .panel.wrapper{
+    float:right;
+    background-color: #fff !important;
+    color:#000 !important;
+    border-bottom:none !important;
+}
+.header.panel > .header.links > li > a {
+
+    color: #000 !important;}
+/** home page offer section ***/
+
+.cms-index-index .page-title-wrapper{display:none !important;}
+/* Banner Style*/
+
+.flex-viewport .slides li{position:relative;}
+
+.header.panel > .header.links > .customer-welcome + .authorization-link {
+    display: /*block*/inline-block !important;
+}
+.block-minicart .block-content > .actions > .primary .action.primary{ font-size: 16px; border-radius: 0 !important;}
+
+
+
 /*------responsive-------*/
 
 
@@ -2100,9 +2144,9 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 	.banner-slider .desk-ban{ display:none;}
 	.banner-slider .mob-ban{ display:block;}
 	.nav-sections .navbar{ display:none;}
-	.menu{ display:block;}
+	.menu{ display:block; left: 20px;}
 	.nav-sections { position: absolute; top: 0; left: 0;     margin: 0;     display: block; width: 100%; overflow: inherit;}
-	.nav-sections .navbar {     width: 100%; position: absolute; top: 76px; left: 0; z-index: 9; background: #fff; border-top: 1px solid #cccccc70;}
+	.nav-sections .navbar {     width: 100%; position: absolute; top: 76px; left: 0; z-index: 99; background: #fff; border-top: 1px solid #cccccc70;}
 	.nav-sections .navbar ul li{     padding: 0; float: none;     margin: 0 0;}
 	.nav-sections .navbar ul li a{ display:block; padding:10px 30px;}
 	.rewords-outer{background:url(../images/rewords-img.jpg) no-repeat 0 0;   height: 367px;;}
@@ -2112,7 +2156,7 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 	.offer-tab-con { background: #efefef; padding: 20px 20px; text-align: center; }
 	.logo{width: 150px; margin: 0 auto; float: none;}
 	.logo img{ width:100%;}
-	.search-outer{ top: 43px;    right: 0; }
+	.search-outer{ top: 43px;    right: 13px; }
 	.search-icon span{width: 30px;background-size: 100%;height: 24px;background-position: 4px 0;}
 	.wishlist span{     width: 30px; height: 26px; background-size: 100%; background-position:4px -167px;}
 	.my-account span{     width: 30px; height: 24px; background-size: 100%; background-position:4px -200px;}
@@ -2244,6 +2288,10 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 .washing-machin-outer .bx-pager{ bottom: 9px;}
 .washing-slider{ overflow:hidden;}
 .explore-banner{ position: relative;}
+/*---------260819--------*/
+.header.panel > .header.links{display: block;}
+.page-header .panel.wrapper{     position: absolute; top: 3px; right: 0;}
+
 }
 
 @media only screen and (max-width: 480px){
@@ -2350,10 +2398,10 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 .banner-outer .flex-control-nav li { width: 40px; margin-right: 0;}
 .magestore-bannerslider-standard img { height: 310px !important;}
 .header.links li a, .header .minicart-wrapper a.showcart{ width: 25px; height: 25px;}
-.header.links li.wishlist a{ background-position:4px -137px;}
+.header.links li.wishlist a{     background-position: 4px -125px; width: 23px; height: 23px;}
 .header.links li.authorization-link a{ background-position:4px -166px;}
 .header .minicart-wrapper a.showcart{background-position:3px -22px; }
-.header.links li{ width: 23px;     height: 23px;}
+.header.links li{     width: auto; height: auto;}
 .block-search .label:before{     width: 25px; height: 23px;}
 .search-outer .block-search input[ type="text"]{     top: 36px;}
 .offer-tab-desktop { display: flex; width: 221px; margin: 0 auto !important; overflow: auto;}
@@ -2514,7 +2562,7 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 	.logo{width: 100px;}
 	.nav-sections .navbar ul li a{font-size: 10.5px;}
 	.nav-sections .navbar ul li{margin: 0 4px;}
-	.search-outer{top: 32px;right: 9px;}
+	.search-outer{top: 32px;right: 20px;}
 	.search-icon span{width: 30px;background-size: 100%;height: 24px;background-position: 4px 0;}
 	.wishlist span{     width: 30px; height: 26px; background-size: 100%; background-position:4px -167px;}
 	.my-account span{     width: 30px; height: 24px; background-size: 100%; background-position:4px -200px;}
@@ -2558,9 +2606,11 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 	.footer-container form{     width: 70% !important;}
 	.footer-bottom > div ul li a{     font-size: 10px;}
 	/*--------------home---200819-------*/
-	.header.links li{     width: 24px; height: 24px;}
-	.header.links li a, .header .minicart-wrapper a.showcart{     width: 25px; height: 25px;}
-	.header.links li.wishlist a{ background-position:4px -138px;}
+	.header.panel > .header.links{ margin-top: -11px !important;}
+	.header.links li{}
+	.header.links li.wishlist a{     background-position: 4px -137px; width: 100%; height: 22px;}
+	.search-outer .header.links li{     width: 24px; height: 24px;}
+	.search-outer .header.links li a,.header .minicart-wrapper a.showcart{width: 25px; height: 25px;}
 	.header.links li.authorization-link a{background-position:4px -166px;}
 	.header .minicart-wrapper a.showcart{ background-position:3px -22px;}
 	.header .minicart-wrapper a.showcart:hover { background-position: 4px -670px;}
@@ -2582,34 +2632,5 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 	
 }
 
-.header.links{ margin:0 0; padding: 0 0; }
-/*.header.links li{  float: left; width: 34px; height: 30px;list-style: none; overflow: hidden;}*/
-.header.links li a{}
-.header .minicart-wrapper a.showcart{ display: block; width: 34px; height: 30px;text-indent: 99px;line-height: 90px; background: url(../images/sprite-icon.png) no-repeat 0 0; background-size: 100%;}
-.header.links li.wishlist a{  background-position: 4px -188px;}
-/*.header.links li.authorization-link a{  background-position: 4px -227px;} */
-.header .minicart-wrapper a.showcart:before{  display: none;}
-.header .minicart-wrapper a.showcart{background-position: 4px -29px;}
-.search-outer .block-search .block-title{  }
-.navigation, .breadcrumbs, .page-header .header.panel, .header.content, .footer.content, .page-wrapper > .widget, .page-wrapper > .page-bottom, .block.category.event, .top-container, .page-main{ padding:0; margin: 0; max-width: none; width: 100%; }
-.search-outer .block-search{ width: 120px; }
-.search-outer .block-search input[ type="text"]{ border: 0;  padding: 0 5px;}
-.search-outer .block-search input[ type="text"]:focus{ outline: 0; box-shadow: none; }
-.block-search .action.search:before{ font-size: 0; background: url(../images/sprite-icon.png) no-repeat 5px 3px;
-width: 34px; height: 30px; display: block; background-size: 100%; }
 
-.page-header .panel.wrapper{
-    float:right;
-    background-color: #fff !important;
-    color:#000 !important;
-    border-bottom:none !important;
-}
-.header.panel > .header.links > li > a {
 
-    color: #000 !important;}
-/** home page offer section ***/
-
-.cms-index-index .page-title-wrapper{display:none !important;}
-/* Banner Style*/
-
-.flex-viewport .slides li{position:relative;}

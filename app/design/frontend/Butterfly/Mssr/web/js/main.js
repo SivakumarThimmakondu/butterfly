@@ -189,6 +189,22 @@ jQuery('#tabs li a').click(function(){
 });
 
 
+/*** Acton Calculator ****/
+
+jQuery(".arrow").click(function(){
+    jQuery(".action-calculator-body").toggleClass("calculator-full");   
+    jQuery(".arrow-close").css({'z-index':'99','display':'block'});
+    jQuery(".arrow").hide();
+  });
+  
+  jQuery(".arrow-close").click(function(){  
+    jQuery(".action-calculator-body").toggleClass("calculator-full");
+    jQuery(".arrow").show();
+    jQuery(".arrow-close").hide();
+  });
+
+
+
 
 
 
