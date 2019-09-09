@@ -8,7 +8,7 @@ class Index extends \Magento\Framework\App\Action\Action
 {
      protected $_scopeConfig;
      protected $resultJsonFactory;
-     public function __construct(
+    public function __construct(
         \Magento\Framework\App\Action\Context $context,
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
         \Magento\Framework\View\Result\PageFactory $resultPageFactory,
@@ -26,6 +26,7 @@ class Index extends \Magento\Framework\App\Action\Action
         $this->insulationFactory= $insulationFactory;
         $this->climateFactory= $climateFactory;
         $this->powertonFactory= $powertonFactory;
+
         $this->resultJsonFactory = $resultJsonFactory;
 
     }
@@ -39,10 +40,16 @@ class Index extends \Magento\Framework\App\Action\Action
     {
   
         // 1. POST request : Get booking data
-       $post = (array) $this->getRequest()->getPost();
+        $post = (array) $this->getRequest()->getPost();
        
-       //print_r($post);
-       //exit;
+        //$length = $this->getRequest()->getParam('length');
+
+        
+       
+        //exit;
+
+        //print_r($post);
+        //exit;
 
 
         if (!empty($post)) {
@@ -80,7 +87,8 @@ class Index extends \Magento\Framework\App\Action\Action
           $resultJson = $this->resultJsonFactory->create();
           $response = $powertonhours;
           $resultJson->setData($response);
-          return $resultJson;
+
+           return $resultJson;
             //exit;
             // Doing-something with...
 
