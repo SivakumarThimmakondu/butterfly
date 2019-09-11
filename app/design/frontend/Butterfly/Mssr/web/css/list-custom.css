@@ -539,8 +539,8 @@ a:hover{ color:#929e1e; text-decoration:none;}
 .action-calculator-outer .action-calculator-body.calculator-full{ width: 430px;}
 .action-calculator-title span{ display:block;}
 .action-calculator-title .con{     transform: rotate(-90deg); -webkit-transform: rotate(-90deg); position: fixed;
-    top: 209px;
-    right: -70.5px;
+    top: 193px;
+    right: -54.5px;
     background: #c10c3f;
     color: #fff;
     padding: 7px 11.6px;
@@ -553,39 +553,64 @@ a:hover{ color:#929e1e; text-decoration:none;}
     color: #fff;
     font-size: 20px;     cursor: pointer; z-index:99;}
 .action-calculator-body .title{ background:#000;}
+
 .action-calculator-body .title h2{ color:#fff;     font-size: 18px; font-weight: normal; padding: 6px 15px;}
 .action-calculator-from ul{ margin:0 0; padding:0 0;}
-.action-calculator-from ul li{ float:left;     list-style: none;     margin-right: 3%;}
+.action-calculator-from ul li{ float:left;     list-style: none;     margin-right: 5%;}
 .action-calculator-from ul li:last-child{ margin-right:0;}
-.action-calculator-from ul li.size,.action-calculator-from ul li.room-cel{ width:40%;}
+.action-calculator-from ul li.size,.action-calculator-from ul li.room-cel{ width:45%;}
 .action-calculator-from ul li.type{ width:20%;}
-.action-calculator-from ul li.ins{ width: 23%;}
+.action-calculator-from ul li.ins{ width: 45%;}
 .action-calculator-from ul li.ins input[ type="text"],.action-calculator-from ul li.cli input[ type="text"]{ width:100%;}
 .action-calculator-from ul li.sun-ex,.action-calculator-from ul li.cli{ width:20%;}
-.action-calculator-from{ padding: 10px 15px;}
-.action-calculator-from ul li label{ color:#fff; font-size: 12px;}
-.action-calculator-from ul li div input[ type="text"]{     border: 0.5px solid #fff; background: transparent; display: inline-block; width: 44%; outline: 0; padding: 0px 2px;}
+.action-calculator-from{ padding: 30px 15px;}
+.action-calculator-from ul li label{ color:#fff; font-size: 17px;}
+.action-calculator-from ul li div input[ type="text"]{     border: 0.5px solid #fff; background: transparent; display: inline-block; width: 44%; outline: 0; padding: 5px 2px;color:#fff;}
+
+.action-calculator-from ul li.size div input[ type="text"]{     border: 0.5px solid #fff; background: transparent; display: inline-block; width: 46%; outline: 0; padding: 5px 2px;color:#fff;}
+
+.action-calculator-from ul li.type div select{ border: 0.5px solid #fff; background: transparent; display: inline-block; width: 100%; outline: 0; padding: 5px 2px;color:#fff;text-align: center;text-align-last: center;}
+.action-calculator-from ul li.type div select option{color:#000;}
+.action-calculator-from ul li.cli div select{ border: 0.5px solid #fff; background: transparent; display: inline-block; width: 100%; outline: 0; padding: 5px 2px;color:#fff;text-align: center;text-align-last: center;}
+.action-calculator-from ul li.cli div select option{color:#000;}
+
+.action-calculator-from ul li div input[ type="text"]::-webkit-input-placeholder {  color: #fff; }
+.action-calculator-from ul li div input[ type="text"]::-moz-placeholder {  color: #fff; }
+.action-calculator-from ul li div input[ type="text"]:-ms-input-placeholder {  color: #fff; }
+.action-calculator-from ul li div input[ type="text"]:-moz-placeholder {  color: #fff; }
+
+.action-calculator-from ul li.room-cel div input[ type="text"]{ width:98%; }
 .action-calculator-from ul li.type div input[ type="text"]{ width:100%;}
 .action-calculator-from ul li.sun-ex div input[ type="text"]{ width:100%;}
+
+.action-calculator-from ul li.ins div select{border: 0.5px solid #fff;background: transparent;display: inline-block;width: 100%;outline: 0;padding: 4px 2px;
+color:#fff;text-align: center;text-align-last: center;}
+.action-calculator-from ul li.ins div select option{color:#000;}
+
 .action-calculator-from ul:after{ content:""; display:table; clear:both;}
-.action-calculator-from ul{ margin-bottom:10px;}
-.action-calculator-from ul.number-people li.number{ width:49%;     margin-top: 4px;}
-.action-calculator-from ul.number-people li.number  input[ type="text"]{ width: 30px;
+.action-calculator-from ul{ margin-bottom:15px;}
+.action-calculator-from ul.number-people li.number{ width:45%; margin-top: 4px; }
+.action-calculator-from ul.number-people li.number  input[ type="text"]{
+    width: 98%;
     border: 0.5px solid #fff;
     background: transparent;
-    display: inline-block;}
-.action-calculator-from ul.number-people li.cal-button{ width:37%;}
-.action-calculator-from ul.number-people li.cal-button a{ border: 0.5px solid #fff;
-    font-size: 12px;
-    text-decoration: none;
-    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 2px;
+    color:#fff;}
+.action-calculator-from ul.number-people li.cal-button{ width:45%;margin-top: 25px;}
+.action-calculator-from ul.number-people li.cal-button a{ border: 0.5px solid #fff; font-size: 12px; text-decoration: none;  border-radius: 20px;
     padding: 5px 14px;
     display: inline-block;
     color: #fff;}
-.catalog-category-view .page-title-wrapper .page-title{margin-bottom: 0px;}
-.catalog-category-view .page-main .page-title-wrapper{text-align: center;}
-.catalog-category-view .page-main .sorter{float: left;}
-.catalog-category-view .page-main .toolbar-amount{float: right;}
+
+
+
+.action-calculator-outer .action-calculator-body.calculator-full .title { background: #c10c3f; transform: rotate(-90deg); -webkit-transform: rotate(-90deg);
+    position: fixed; top: 225px; right: 351.5px; background: #c10c3f; color: #fff; padding: 7px 11.6px; font-size: 14px; cursor: pointer; }
+
+.action-calculator-title .arrow-close { position: fixed; top: 110px; right: 0px; padding: 3px 10px; background: #000; color: #fff; font-size: 20px; cursor: pointer;}
+
+.recommended-result { color: #fff; }
 
 
 /*------responsive-------*/

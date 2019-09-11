@@ -191,6 +191,10 @@ jQuery('#tabs li a').click(function(){
 
 /*** Acton Calculator ****/
 
+jQuery(".mob-emi-title").click(function(){
+    jQuery(".emi-filter-outer").toggle();
+  });
+
 jQuery(".arrow").click(function(){
     jQuery(".action-calculator-body").toggleClass("calculator-full");   
     jQuery(".arrow-close").css({'z-index':'99','display':'block'});
@@ -206,6 +210,44 @@ jQuery(".arrow").click(function(){
 
 
 
+/**** Compare product ****/
+jQuery(document).ready(function(){
+  jQuery(".collaps-all").click(function(){
+    jQuery(".sub-catagory-outer").toggle();
+  });
+  jQuery(".catagory-main-title").click(function(){
+    jQuery(".sub-catagory-outer").toggle();
+  jQuery(this).toggleClass("arrow-open");
+  });
+  
+  jQuery(".arrow").click(function(){
+    jQuery(".action-calculator-body").toggleClass("calculator-full");
+  });
+  
+});
+
+jQuery('body').on('click','.sub-catagory-title',function(){
+
+  jQuery(this).closest('table').toggleClass('hidden-area');
+
+})
+
+jQuery(window).scroll(function() {    
+    var scroll = jQuery(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 300) {
+        //clearHeader, not clearheader - caps H
+        jQuery(".compare-pro-list").addClass("com-fixed");
+    jQuery(".fixed-com-print").addClass("com-fixed");
+    jQuery(".compare-item-info").addClass("com-fixed");
+    }else if(scroll < 300) {
+        //clearHeader, not clearheader - caps H
+        jQuery(".compare-pro-list").removeClass("com-fixed");
+    jQuery(".fixed-com-print").removeClass("com-fixed");
+    jQuery(".compare-item-info").removeClass("com-fixed");
+    }
+});
 
 
 

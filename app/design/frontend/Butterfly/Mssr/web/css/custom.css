@@ -2632,5 +2632,266 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 	
 }
 
+/*------------compare page--------*/
+.product-compare-outer:after{ content:""; display:table; clear:both;}
+.compare-head{ border-bottom:1px solid #b1b1b1; padding: 34px 30px; text-align:center;}
+.compare-head .page-title-wrapper{ display:inline-block;}
+.compare-head .com-back-left{ float:left;}
+.compare-head .com-print-right{ float:right; margin-top: 35px;}
+.compare-head .com-back-left ul{ list-style:none; margin:0 0; padding:0 0;}
+.compare-head .com-back-left ul li{ float:left; margin-right:20px; position: relative;}
+.compare-head .com-back-left ul li:last-child{ margin-right:0;}
+.compare-head .com-back-left ul li.back{    margin-top: 8px;}
+.compare-head .com-back-left ul li.back a{ color:#000; text-decoration:none;     padding-left: 20px; }
+.compare-head .com-back-left ul li.back a:hover{ color:#a60034;}
+.compare-head .com-back-left ul li.back a:after{     content: "";
+    clear: both;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 1px solid #000;
+    border-width: 1px 0px 0px 1px;
+    display: block;
+    padding: 5px;
+    vertical-align: middle;
+    transform: rotate(-39deg);
+    -webkit-transform: rotate(-39deg);
+    top: 4px;
+    left: 0; }
+.compare-head .com-back-left ul li.back a:hover:after{ border-color:#a60034;}
+.compare-head .com-back-left ul li.add-pro a{     color: #a60034; border: 1px solid #a60034; text-decoration: none; font-family: 'LG Smart Bold'; font-size: 14px; padding: 10px 25px; border-radius: 20px;     display: block;}
+.compare-head .com-back-left ul li.add-pro a:hover{ background: #929e1e; border-color: #929e1e; color:#fff;}
+.com-print-right a{position:relative;display: inline-block;padding-left: 40px;margin-right: 40px;color: #000;text-decoration: none;font-family: 'LG Smart Bold';font-size: 14px;}
+.com-print-right a:last-child{ margin-right:0;}
+.com-print-right a.action:after{
+    content: "";
+    display: block;
+    clear: both;
+    width: 30px;
+    height: 21px;
+    background: url(../images/sprite-icon.png) no-repeat 0 0;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    background-size: 100%;
+    }
+.com-print-right a.action.email:after{ background-position: 0 -1340px;}
+.com-print-right a.action.print:after{ background-position: 0 -1368px;}
+.compare-head .page-title-wrapper .page-title{     font-family: 'LG Smart Bold';     font-size: 25px; margin-bottom: 5px;}
+.compare-head .page-title-wrapper .pro-count{font-family: 'LG Smart'; font-size: 14px;}
+.fixed-com-print{ text-align: right; padding-right: 30px; display:none;}
+.comparison table{     padding: 20px 0;     width: 100%;}
+.table-comparison .compare-pro-list .cell.label.product, .table-comparison .compare-pro-list .cell.product.info{ display:block; float:left; width:25%;     min-height: 300px;}
+.table-comparison .cell.label.product,.table-comparison .cell.product.info{border-right:1px solid #b1b1b1;width: 180px;padding: 50px 20px 20px;position: relative;}
+.table-comparison .cell.label.product{ background:#eeeeee;     border: 0;}
+.table-comparison .remove.product{width: 44px;height: 20px;position: absolute;top: 27px;right: 10px;}
+.table-comparison .remove.product a{background: url(../images/sprite-icon.png) no-repeat 0 -2051px;display:block;text-indent: 99px;overflow: hidden;height: 20px;background-size: 100%;}
+.product-info-outer .product-item-photo{ display:block;     text-align: center;     margin-bottom: 20px;}
+.table-comparison .product-item-name a{         text-align: center; display: block; margin-bottom: 20px; color: #000; text-decoration: none; font-family: 'LG Smart'; font-size: 14px; line-height: 20px;}
+.table-comparison .rating{ text-align: center;}
+.table-comparison .rating .checked{ color:#c50f42;}
+.table-comparison .price-box{ text-align:center; margin:15px 0;}
+.table-comparison .price-box .price{ font-family: 'LG Smart Bold'; font-size: 14px;}
+.table-comparison .product-item-actions{ text-align:center;}
+.table-comparison .product-item-actions form .where-to-buy{     display: inline-block;
+    border: 0.5px solid #545454;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #545454;
+    margin-right: 10px; }
+.table-comparison .product-item-actions form .where-to-buy:hover{ background:#c50f42; color:#fff; border-color:#c50f42;}
+.table-comparison .product-item-actions form .tocart{display: inline-block;
+    background: url(../images/sprite-icon.png) no-repeat 0 -672px;
+    width: 25px;
+    height: 20px;
+    border: 0;
+    text-indent: 99px;
+    overflow: hidden;
+    line-height: 20px;
+    background-size: 100%; outline: 0;
+    cursor: pointer;}
+.compare-item-info { margin: 0 30px; border-top: 1px solid #d3d3d3; padding: 10px 10px; border-bottom: 1px solid #d3d3d3; overflow: hidden;}
+.compare-title-outer h2{ color:#323232;     font-size: 25px;     margin-bottom: 10px;}
+.compare-title-outer .choice-control-outer dl{}
+.compare-title-outer .choice-control-outer dl dt,.compare-title-outer .choice-control-outer dl dd{ display:inline-block; margin-right: 5px; padding-right: 5px; font-size: 14px;     line-height: 10px;     font-family: 'LG Smart Bold';
+    color: #9e9e9e;}
+.compare-title-outer .choice-control-outer dl dd a{ color:#9e9e9e; text-decoration:none;}
+.compare-title-outer .choice-control-outer dl dd{ border-right:1px solid #9e9e9e;}
+.compare-title-outer .choice-control-outer dl dd.disabled{     padding: 0; margin: 0; border: 0;}
+.compare-title-outer .choice-control-outer dl dd.disabled a.icon{ width: 15px;
+    height: 16px;
+    background: #aa0034;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 16px;
+    margin-left: 6px;}
+.compare-title-outer .choice-control-outer dl dd a:hover{ color:#aa0034; text-decoration:underline;}
+.compare-item-info .compare-title-outer{ float:left;}
+.compare-item-info .collaps-all-outre{     float: right;     margin-top: 24px;}
+.compare-item-info .collaps-all-outre .collaps-all{
+    display: block;
+    color: #aa0034;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: 'LG Smart Bold';
+    cursor: pointer;
+    position: relative;
+    padding-right: 22px;
+    }
+.compare-item-info .collaps-all-outre .collaps-all:after{
+    content: "";
+    clear: both;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 1px solid #aa0034;
+    border-width: 1px 0px 0px 1px;
+    display: block;
+    padding: 3px;
+    vertical-align: middle;
+    transform: rotate(-39deg);
+    -webkit-transform: rotate(-134deg);
+    top: 5px;
+    right: 0;
+    }
+.pro-details-outer .catagory-main-title{background: #f7f7f7;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px;
+    margin: 0 0;
+    color: #373737;
+    font-family: 'LG Smart Bold'; position:relative;     cursor: pointer;}
+.pro-details-outer .catagory-main-title:after{content: "";
+    clear: both;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 1px solid #000000;
+    border-width: 1px 0px 0px 1px;
+    display: block;
+    padding: 3px;
+    vertical-align: middle;
+    transform: rotate(49deg);
+    -webkit-transform: rotate(49deg);
+    top: 18px;
+    right: 30px;}
+.pro-details-outer .catagory-main-title.arrow-open:after{  transform: rotate(-134deg);
+    -webkit-transform: rotate(-134deg);
+    top: 13px;}
+.sub-catagory-title{ border-bottom: 1px solid #d3d3d3;
+    padding: 10px 10px 10px 30px;
+    margin: 0 0;
+    color: #373737;
+    font-family: 'LG Smart Bold'; position:relative;     cursor: pointer;}
+.sub-catagory-title:after{ content: "";
+    clear: both;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 1px solid #000000;
+    border-width: 1px 0px 0px 1px;
+    display: block;
+    padding: 3px;
+    vertical-align: middle;
+    transform: rotate(49deg);
+    -webkit-transform: rotate(49deg);
+    top: 18px;
+    left: 10px;}
+.hidden-area .sub-catagory-title:after{ transform: rotate(-134deg);
+    -webkit-transform: rotate(-134deg); top:13px;}
+.margin-left{}
+.margin-right{}
+.pro-details-outer .attribute-outer{ border-bottom:1px solid #d3d3d3;      text-align: left;     padding: 15px 0;}
+.pro-details-outer .attribute.value{ border-bottom:1px solid #d3d3d3; border-left:1px solid #d3d3d3;    padding: 15px 0; text-align: center;}
+.pro-details-outer .attribute-outer ul{ margin:0 0; padding:0 0; list-style:none;}
+.pro-details-outer .attribute-outer ul li{ position:relative; }
+.pro-details-outer .attribute-outer ul li .checkmark{position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;}
+.pro-details-outer .attribute-outer ul li .attribute.label{     padding-left: 35px;}
+.pro-details-outer .attribute-outer ul li .attribute.label:after{ content:""; display:block; clear:both; width:15px; height:15px; border:1px solid #bdbdbd; position: absolute; top: 0; left: 0; color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-weight: normal;}
+.pro-details-outer .attribute-outer ul li input{        position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    top: 0;
+    left: 0;     z-index: 9;}
+.pro-details-outer .attribute-outer ul li input:checked ~ .attribute.label:after{ content:"✓"; background:#a60032; border-color:#a60032;}
+.comparison table.compare-pro-details{ padding:0 0;}
+.pro-attribute-outer > th,.pro-attribute-outer > td{width:25%;}
+.compare-pro-sub{ padding:0 0 !important;}
+.compare-item-info-outer{     margin: 0 30px;}
+.hidden-area .pro-attribute-outer{ display:none;}
+
+.compare-item-info.com-fixed{     border: 0;
+    position: fixed;
+    width: 95.5%;
+    left: 0;
+    top: 0px;
+    margin: 0;
+    background: #fff;
+    box-shadow: 0 0 16px #0000003b;
+    z-index: 9;     padding: 10px 30px;}
+.fixed-com-print.com-fixed{     display: block;
+    position: fixed;
+    z-index: 99;
+    top: 34px;
+    right: 135px;}
+/*.compare-pro-list.com-fixed{ position: fixed; top:0; width:100%; left:0; background:#fff; z-index: 9; }
+.table-comparison .compare-pro-list.com-fixed .rating,.table-comparison .compare-pro-list.com-fixed .price-box{ display:none;}*/
+
+@media only screen and (max-width: 767px){
+/*------------compare page--------*/
+.compare-head{ padding: 15px 30px;}
+.compare-head .com-back-left ul li{ float: none;}
+.compare-head .com-back-left ul li.add-pro a{     font-size: 10px; padding: 6px 9px;}
+.compare-head .com-back-left ul li.back a{     padding-left: 0; font-size: 13px}
+.compare-head .com-back-left ul li.back a:after{     padding: 3px;}
+.compare-head .com-back-left ul li.back{     padding-left: 20px; text-align: left; margin-bottom: 10px; margin-top: 0;}
+.com-print-right a{     margin-bottom: 14px;     margin-right: 0; display: block;}
+.compare-head .com-print-right{ margin-top: 5px;}
+.product-info-outer .product-item-photo img{ display:block; width:100%;}
+.table-comparison .product-item-name a{     font-size: 12px; line-height: 18px;     margin-bottom: 10px;}
+.compare-item-info-outer{ margin: 0 0;}
+.pro-details-outer .attribute-outer ul li .attribute.label{     font-size: 12px;}
+.pro-details-outer .attribute-outer{ padding: 15px 6px;}
+.compare-item-info{     margin: 0 0;}
+.compare-item-info.com-fixed{     width: 91.5%;}
+.fixed-com-print.com-fixed a{ display: inline-block;margin-right: 20px;}
+.fixed-com-print.com-fixed a:last-child{ margin-right:0;}
+
+
+}
+
+@media only screen and (max-width: 480px){
+    .compare-head{ padding: 10px 10px;}
+    .compare-head .com-back-left ul li.add-pro a { font-size: 8px; padding: 5px 5px;}
+    .compare-head .page-title-wrapper .page-title{     font-size: 18px;}
+    .compare-head .page-title-wrapper .pro-count{     font-size: 12px;}
+    .compare-head .com-back-left ul li.back{     margin-bottom: 5px;}
+    .com-print-right a{ font-size: 12px;     margin-bottom: 8px;}
+    .table-comparison .compare-pro-list .cell.label.product, .table-comparison .compare-pro-list .cell.product.info{         float: none;
+    width: 89%;
+    min-height: auto;
+    border-bottom: 1px solid #b1b1b1;
+    border-right: 0;}
+    .compare-item-info-outer{     margin: 0 auto; overflow: auto; width: 360px}
+    .compare-pro-sub{     width: 640px !important;}
+    .compare-item-info.com-fixed{ padding: 10px 15px;}
+    .compare-title-outer h2{     font-size: 15px; }
+    .compare-title-outer .choice-control-outer dl dt, .compare-title-outer .choice-control-outer dl dd{     font-size: 12px;}
+    .fixed-com-print.com-fixed{     top: 7px; right: 14px;     padding-right: 0;}
+    .fixed-com-print.com-fixed a{ margin-right: 7px;     padding-left: 33px;}
+}
+
 
 
