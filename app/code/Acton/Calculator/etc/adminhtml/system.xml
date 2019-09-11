@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="acton" sortOrder="999" translate="label">
+			<label>acton</label>
+		</tab>
+		<section id="calculator" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>calculator</label>
+			<tab>acton</tab>
+			<resource>Acton_Calculator::config_acton_calculator</resource>
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>general</label>
+				<field id="population_btu" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>population_btu</label>
+					<comment/>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

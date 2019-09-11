@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Acton\Calculator\Api\BtuRepositoryInterface" type="Acton\Calculator\Model\BtuRepository"/>
+	<preference for="Acton\Calculator\Api\Data\BtuInterface" type="Acton\Calculator\Model\Data\Btu"/>
+	<preference for="Acton\Calculator\Api\Data\BtuSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Acton\Calculator\Model\ResourceModel\Btu\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">acton_calculator_btu</argument>
+			<argument name="resourceModel" xsi:type="string">Acton\Calculator\Model\ResourceModel\Btu\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="acton_calculator_btu_listing_data_source" xsi:type="string">Acton\Calculator\Model\ResourceModel\Btu\Grid\Collection</item>
+				<item name="acton_calculator_powerton_listing_data_source" xsi:type="string">Acton\Calculator\Model\ResourceModel\Powerton\Grid\Collection</item>
+				<item name="acton_calculator_insulation_listing_data_source" xsi:type="string">Acton\Calculator\Model\ResourceModel\Insulation\Grid\Collection</item>
+				<item name="acton_calculator_climate_listing_data_source" xsi:type="string">Acton\Calculator\Model\ResourceModel\Climate\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+	<preference for="Acton\Calculator\Api\PowertonRepositoryInterface" type="Acton\Calculator\Model\PowertonRepository"/>
+	<preference for="Acton\Calculator\Api\Data\PowertonInterface" type="Acton\Calculator\Model\Data\Powerton"/>
+	<preference for="Acton\Calculator\Api\Data\PowertonSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Acton\Calculator\Model\ResourceModel\Powerton\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">acton_calculator_powerton</argument>
+			<argument name="resourceModel" xsi:type="string">Acton\Calculator\Model\ResourceModel\Powerton\Collection</argument>
+		</arguments>
+	</virtualType>
+	<preference for="Acton\Calculator\Api\InsulationRepositoryInterface" type="Acton\Calculator\Model\InsulationRepository"/>
+	<preference for="Acton\Calculator\Api\Data\InsulationInterface" type="Acton\Calculator\Model\Data\Insulation"/>
+	<preference for="Acton\Calculator\Api\Data\InsulationSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Acton\Calculator\Model\ResourceModel\Insulation\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">acton_calculator_insulation</argument>
+			<argument name="resourceModel" xsi:type="string">Acton\Calculator\Model\ResourceModel\Insulation\Collection</argument>
+		</arguments>
+	</virtualType>
+	<preference for="Acton\Calculator\Api\ClimateRepositoryInterface" type="Acton\Calculator\Model\ClimateRepository"/>
+	<preference for="Acton\Calculator\Api\Data\ClimateInterface" type="Acton\Calculator\Model\Data\Climate"/>
+	<preference for="Acton\Calculator\Api\Data\ClimateSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="Acton\Calculator\Model\ResourceModel\Climate\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">acton_calculator_climate</argument>
+			<argument name="resourceModel" xsi:type="string">Acton\Calculator\Model\ResourceModel\Climate\Collection</argument>
+		</arguments>
+	</virtualType>
+</config>

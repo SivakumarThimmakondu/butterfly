@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table comment="acton_calculator_btu Table" engine="innodb" name="acton_calculator_btu" resource="default">
+		<column comment="Entity Id" identity="true" name="btu_id" nullable="false" padding="6" unsigned="false" xsi:type="smallint"/>
+		<constraint referenceId="PRIMARY" xsi:type="primary">
+			<column name="btu_id"/>
+		</constraint>
+		<column name="btu_area_min" nullable="false" xsi:type="bigint"/>
+		<column name="btu_area_max" nullable="false" xsi:type="bigint"/>
+		<column name="btu_hours" nullable="false" xsi:type="bigint"/>
+	</table>
+	<table comment="acton_calculator_powerton Table" engine="innodb" name="acton_calculator_powerton" resource="default">
+		<column comment="Entity Id" identity="true" name="powerton_id" nullable="false" padding="6" unsigned="false" xsi:type="smallint"/>
+		<constraint referenceId="PRIMARY" xsi:type="primary">
+			<column name="powerton_id"/>
+		</constraint>
+		<column name="power_ton" nullable="false" xsi:type="bigint"/>
+		<column name="power_btu_hour" nullable="false" xsi:type="bigint"/>
+	</table>
+	<table comment="acton_calculator_insulation Table" engine="innodb" name="acton_calculator_insulation" resource="default">
+		<column comment="Entity Id" identity="true" name="insulation_id" nullable="false" padding="6" unsigned="false" xsi:type="smallint"/>
+		<constraint referenceId="PRIMARY" xsi:type="primary">
+			<column name="insulation_id"/>
+		</constraint>
+		<column name="insulation_grade" nullable="false" xsi:type="varchar"/>
+		<column name="insulation_value" nullable="false" xsi:type="bigint"/>
+	</table>
+	<table comment="acton_calculator_climate Table" engine="innodb" name="acton_calculator_climate" resource="default">
+		<column comment="Entity Id" identity="true" name="climate_id" nullable="false" padding="6" unsigned="false" xsi:type="smallint"/>
+		<constraint referenceId="PRIMARY" xsi:type="primary">
+			<column name="climate_id"/>
+		</constraint>
+		<column name="house_age" nullable="false" xsi:type="varchar"/>
+		<column name="climate" nullable="false" xsi:type="varchar"/>
+		<column name="climate_btu_hours" nullable="false" xsi:type="bigint"/>
+	</table>
+</schema>

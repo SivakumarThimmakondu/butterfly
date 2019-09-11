@@ -153,3 +153,142 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
         </script>
     <?php endif; ?>
 <?php endif; ?>
+
+<form id="ajaxactons" method="POST" name="ajaxactons"
+     data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>"
+     data-mage-init='{"validation":{}}'>
+<div class="action-calculator-outer">
+        <div class="action-calculator-title">
+            <span class="arrow">></span>
+            <span class="arrow-close">X</span>          
+            <span class="con">AC TON CALCULATOR</span>
+        </div>
+        <div class="action-calculator-body">            
+            <div class="title">
+                <h2>AC TON CALCULATOR</h2>
+            </div>
+            <div class="action-calculator-from">
+                <ul>
+                    <li class="size">
+                        <label>Size (ft)*:</label>
+                        <div>
+                            <input class="input-text" id="length" type="text" name="length" placeholder="Length" data-validate="{required:true, 'pattern':/^\d+(\.\d{1,2})?$/, 'validate-greater-than-zero':true}"/>
+                            <input class="input-text" type="text" name="breadth" id="breadth" placeholder="Breadth"
+                            data-validate="{required:true, 'pattern':/^\d+(\.\d{1,2})?$/, 'validate-greater-than-zero':true}"/>
+                        </div>
+                    </li>
+                    <li class="type">
+                        <label>House Age*:</label>
+                        <div>
+                            <select class="validate-select" name="houseage" id="houseage">
+                                <option  value="" selected>--Select--</option>
+                                <option  value="Old">Old</option> 
+                                <option  value="new">New</option>                           
+                            </select>
+                        </div>
+                    </li>
+                    
+                    <li class="cli">
+                        <label>Climate*:</label>
+                        <div>
+                            <select class="validate-select" name="climate" id="climate" >
+                                <option value="" selected>--Select--</option> 
+                                <option value="Warm" >Warm</option> 
+                                <option value="Cold">Cold</option>                          
+                            </select>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <ul>
+                    <li class="room-cel">
+                        <label>Room Ceiling Height (ft)*:</label>
+                        <div>
+                            <input class="input-text" name="height" id="height" type="text" placeholder="Height"
+                             data-validate="{required:true, 'pattern':/^\d+(\.\d{1,2})?$/, 'validate-greater-than-zero':true}"
+                            />                          
+                        </div>
+                    </li>
+                    <li class="ins">
+                        <label>Insulation Condition*:</label>
+                        <div>
+                            <select class="validate-select" name="insulation" id="insulation">
+                                <option value="" selected>-- Select --</option>                             
+                                <option value="Poor">Poor</option> 
+                                <option value="good">Good</option>                          
+                            </select>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <ul class="number-people">
+                    <li class="number">
+                        <label>Number of People*:</label>
+                        <input class="input-text" name="noofpeople"  id="noofpeople" type="text"
+                        data-validate="{required:true, 'pattern':/^\d+(\.\d{1,2})?$/, 'integer':true}"
+                        />
+                    </li>
+                    <li class="cal-button">
+                        <input type="button" id="calculateTotalSubmit"  name="calculate-total-submit" value="Calculate Total">
+                    </li>
+                </ul>               
+                <ul class="calculator-result">              
+                    <li class="result">
+                        <label>Recommended Tonnage:</label>
+                        <div id="resul" class="recommended-result"></div>
+                    </li>       
+                </ul>
+            </div>
+        </div>
+    </div>
+</form> 
+
+
+<?php 
+$ajaxurl =  $block->getBaseUrl(). '/actn/actonform/index';
+?>
+
+<script type="text/javascript">
+    require(
+        [
+            'jquery'
+        ],
+        function($,modal){
+            jQuery("#calculateTotalSubmit").click(function(){
+                var length = $("#length").val();
+                var breadth = $("#breadth").val();
+                var houseage = $("#houseage").val();
+                var climate = $("#climate").val();
+                var height = $("#height").val();
+                var insulation = $("#insulation").val();
+                var noofpeople = $("#noofpeople").val();
+            
+            jQuery.ajax({        
+                        url: "<?php echo $ajaxurl; ?>",
+                        type: 'POST',
+                        dataType: 'json',
+                        data: {
+                            "length": length,
+                            "breadth": breadth,
+                            "houseage": houseage,
+                            "climate": climate,
+                            "height": height,
+                            "insulation": insulation,
+                            "noofpeople": noofpeople,
+                        },
+                         success: function (res){
+                            console.log(res);
+                           jQuery("#resul").html(res); 
+                         }
+              
+                       });
+
+            }); 
+
+        });
+</script>
+
+
+
+
+
