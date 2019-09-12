@@ -191,9 +191,7 @@ jQuery('#tabs li a').click(function(){
 
 /*** Acton Calculator ****/
 
-jQuery(".mob-emi-title").click(function(){
-    jQuery(".emi-filter-outer").toggle();
-  });
+
 
 jQuery(".arrow").click(function(){
     jQuery(".action-calculator-body").toggleClass("calculator-full");   
