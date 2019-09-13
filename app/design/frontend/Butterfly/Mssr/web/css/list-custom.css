@@ -769,6 +769,9 @@ a:hover{ color:#929e1e; text-decoration:none;}
 .mob-cart-outer { display:none;}
 .short-by-mob{ display:none;}
 .page-products .columns {padding:0 20px;}
+.breadcrumbs .items {padding:1px 23px;}
+.page-title-wrapper{padding:2px 23px;}
+.catalog-category-view .page-layout-2columns-left .column.main{margin-top:50px;}
 
 /*------responsive-------*/
 
@@ -845,13 +848,14 @@ a:hover{ color:#929e1e; text-decoration:none;}
 .short-by-mob>div.shortby-left .short:after{ background-position:0 -690px;}
 .short-by-mob>div.filter-right .short:after{background-position:0 -721px;top: -6px;}
 .short-by-mob>div .short{position:relative;padding: 0px 35px;}
-
+.catalog-category-view .page-layout-2columns-left .column.main{margin-top:10px;}
 
 }
 
 @media only screen and (max-width: 480px){
 /*-----------listpage--------*/
 .category-head{ width: 90%;}
+.catalog-category-view .page-layout-2columns-left .column.main{margin-top:10px;}
 .emi-filter-outer > div{     float: none; margin-left: 0;}
 .emi-filter-outer .emi-filter-inr .emi-filter { width: 100%;}
 .emi-filter-outer .emi-filter-inr{ margin-bottom: 40px;}
