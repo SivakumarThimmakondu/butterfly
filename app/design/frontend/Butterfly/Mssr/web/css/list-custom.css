@@ -292,7 +292,7 @@ h3.customer-headeing{     margin-top: 0;}
     margin: 0px !important;
 }
 .action-calculator-from ul.number-people li.cal-button{ width:45%;margin-top: 25px !important;}
-.action-calculator-from ul.number-people li.cal-button #calculateTotalSubmit{text-transform: uppercase; border: 0.5px solid #fff;
+.action-calculator-from ul.number-people li.cal-button #calculateTotalSubmit, .acclear{text-transform: uppercase; border: 0.5px solid #fff;
     font-size: 12px;
     text-decoration: none;
     border-radius: 20px;
