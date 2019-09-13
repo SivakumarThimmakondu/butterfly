@@ -201,7 +201,8 @@ h3.customer-headeing{     margin-top: 0;}
 .action-calculator-from ul li.ins input[ type="text"],.action-calculator-from ul li.cli input[ type="text"]{ width:100%;}
 .action-calculator-from ul li.sun-ex,.action-calculator-from ul li.cli{ width:20%;}
 .action-calculator-from{ padding: 30px 15px;}
-.action-calculator-from ul li label{ color:#fff; font-size: 17px;}
+.action-calculator-from ul li label{ color:#fff; font-size: 17px; }
+.action-calculator-from ul li.result label{ float:left;}
 .action-calculator-from ul li div input[ type="text"]{     border: 0.5px solid #fff; background: transparent; display: inline-block; width: 44%; outline: 0; padding: 5px 2px;color:#fff;}
 
 .action-calculator-from ul li.size div input[ type="text"]{   
@@ -323,7 +324,12 @@ h3.customer-headeing{     margin-top: 0;}
     cursor: pointer;
 }
 
-.recommended-result { color: #fff; }
+.recommended-result { color: #fff;
+float: left;
+font-weight: 800;
+font-size: 16px !important;
+margin-left: 5px;
+margin-top: 3px; }
 .action-calculator-title .arrow-close { position: fixed; top: 110px; right: 0px; padding: 3px 10px; background: #000; color: #fff; font-size: 20px; cursor: pointer;}
 
 @media only screen and (max-width: 480px){
@@ -480,6 +486,7 @@ input[type="text"], input[type="password"], input[type="url"], input[type="tel"]
 a:hover{ color:#929e1e; text-decoration:none;}
 .mb-ajaxsuite-popup-wrapper .mb-login-popup-title strong{ color:#000 !important;}
 .cus-social-link.mob{ display:none;}
+
 
 
 /*login error------*/
@@ -761,6 +768,7 @@ a:hover{ color:#929e1e; text-decoration:none;}
 .emi-cal-outer.mob-view{ display:none;}
 .mob-cart-outer { display:none;}
 .short-by-mob{ display:none;}
+.page-products .columns {padding:0 20px;}
 
 /*------responsive-------*/
 
