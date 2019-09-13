@@ -705,7 +705,7 @@ a:hover{ color:#929e1e; text-decoration:none;}
 .how-buy{ margin-bottom:15px;}
 .how-buy a{display: block; background: #c10c3f; color: #fff; text-decoration: none; padding: 10px 0;}
 .how-buy a:hover{ background:#929e1e;}
-.products-grid ol li .product-list-add-to-cart {padding: 8px 90px; background: transparent !important;color: #c1113f; border-radius: 1px !important}
+.products-grid ol li .product-list-add-to-cart {padding: 8px 90px;background: #a40033 !important;border-radius: 1px !important}
 .desk-compare-outer .add-to-compare{display: block;color: #7e7e7e;text-decoration: none;font-weight: bold;position: relative;}
 .desk-compare-outer .add-to-compare:before{
 
