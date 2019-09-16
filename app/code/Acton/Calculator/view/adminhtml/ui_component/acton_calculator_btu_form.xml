@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+	<argument name="data" xsi:type="array">
+		<item name="js_config" xsi:type="array">
+			<item name="provider" xsi:type="string">acton_calculator_btu_form.btu_form_data_source</item>
+		</item>
+		<item name="label" translate="true" xsi:type="string">General Information</item>
+		<item name="template" xsi:type="string">templates/form/collapsible</item>
+	</argument>
+	<settings>
+		<buttons>
+			<button class="Acton\Calculator\Block\Adminhtml\Btu\Edit\BackButton" name="back"/>
+			<button class="Acton\Calculator\Block\Adminhtml\Btu\Edit\DeleteButton" name="delete"/>
+			<button class="Acton\Calculator\Block\Adminhtml\Btu\Edit\SaveButton" name="save"/>
+			<button class="Acton\Calculator\Block\Adminhtml\Btu\Edit\SaveAndContinueButton" name="save_and_continue"/>
+		</buttons>
+		<namespace>acton_calculator_btu_form</namespace>
+		<dataScope>data</dataScope>
+		<deps>
+			<dep>acton_calculator_btu_form.btu_form_data_source</dep>
+		</deps>
+	</settings>
+	<dataSource name="btu_form_data_source">
+		<argument name="data" xsi:type="array">
+			<item name="js_config" xsi:type="array">
+				<item name="component" xsi:type="string">Magento_Ui/js/form/provider</item>
+			</item>
+		</argument>
+		<settings>
+			<submitUrl path="*/*/save"/>
+		</settings>
+		<dataProvider class="Acton\Calculator\Model\Btu\DataProvider" name="btu_form_data_source">
+			<settings>
+				<requestFieldName>btu_id</requestFieldName>
+				<primaryFieldName>btu_id</primaryFieldName>
+			</settings>
+		</dataProvider>
+	</dataSource>
+	<fieldset name="general">
+		<settings>
+			<label/>
+		</settings>
+		<field formElement="input" name="btu_area_min" sortOrder="10">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="source" xsi:type="string">Btu</item>
+				</item>
+			</argument>
+			<settings>
+				<dataType>text</dataType>
+				<label translate="true">btu_area_min</label>
+				<dataScope>btu_area_min</dataScope>
+				<validation>
+					<rule name="required-entry" xsi:type="boolean">false</rule>
+				</validation>
+			</settings>
+		</field>
+		<field formElement="input" name="btu_area_max" sortOrder="20">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="source" xsi:type="string">Btu</item>
+				</item>
+			</argument>
+			<settings>
+				<dataType>text</dataType>
+				<label translate="true">btu_area_max</label>
+				<dataScope>btu_area_max</dataScope>
+				<validation>
+					<rule name="required-entry" xsi:type="boolean">false</rule>
+				</validation>
+			</settings>
+		</field>
+		<field formElement="input" name="btu_hours" sortOrder="30">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="source" xsi:type="string">Btu</item>
+				</item>
+			</argument>
+			<settings>
+				<dataType>text</dataType>
+				<label translate="true">btu_hours</label>
+				<dataScope>btu_hours</dataScope>
+				<validation>
+					<rule name="required-entry" xsi:type="boolean">false</rule>
+				</validation>
+			</settings>
+		</field>
+	</fieldset>
+</form>
