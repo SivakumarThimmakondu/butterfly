@@ -30,7 +30,10 @@ class Toolbar extends \Magento\Catalog\Block\Product\ProductList\Toolbar
                 ->group('e.entity_id')
                 ->order('view_count ' . $this->getCurrentDirectionReverse());
         }  
-        
+        if ($this->getCurrentOrder() == 'butterfly_pick') {
+            $collection ->addAttributeToFilter('butterfly_pick',1)->setOrder('position', 'asc');
+            $collection->load();
+        }
         $this->_collection = $collection;
 
         $this->_collection->setCurPage($this->getCurrentPage());
