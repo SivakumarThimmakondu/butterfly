@@ -48,7 +48,7 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
             <?php foreach ($_productCollection as $_product): ?>
             <li class="item product-item">
                 <div class="">
-                        <div class="product photo product-item-photo">
+                <div class="product photo product-item-photo">
                            
                  <?php
                     $productImage = $block->getImage($_product, $imageDisplayArea);
@@ -57,7 +57,7 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
 
                     <a  href="<?= /* @escapeNotVerified */ $_product->getProductUrl() ?>"  tabindex="-1">
                         
-                        <img style="width:202px !important;height:150px !important;"src="<?php echo $productImage->getImageUrl(); ?>" />
+                         <?= $productImage->toHtml() ?>
                     
                     </a> 
 
@@ -66,17 +66,14 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                         </div>
                     <div class="product details product-item-details">
                         <div class="size">
-                            <span>77"</span>
-                            <span class="active">65"</span>
-                            <span>55"</span>
+                        <?= $block->getProductDetailsHtml($_product) ?>
                         </div>
 
                        
                         <?php
                             $_productNameStripped = $block->stripTags($_product->getName(), null, true);
                         ?>
-                        <?= $block->getProductDetailsHtml($_product) ?>
-                       
+                         
                        <!-- <div class="product name product-item-name">                       
                             <h2>  <a class="product-item-link"
                                href="<?= /* @escapeNotVerified */ $_product->getProductUrl() ?>">
@@ -91,14 +88,10 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                             </a>
                             </strong>
 
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                        <div class="rating checked">
+                        <?= $block->getReviewsSummaryHtml($_product, $templateType) ?>
                         </div>
-                        <div class="price">$2,799.99</div>
+                        <div class="price"><?= /* @escapeNotVerified */ $block->getProductPrice($_product) ?></div>
                         </div>
                         <div class="how-buy">
                         <div class="actions-primary"<?= strpos($pos, $viewMode . '-primary') ? $position : '' ?>>
@@ -124,13 +117,17 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                                 </div>
                         </div>
                             <div class="desk-compare-outer">
-                                    <a CLASS="add-to-compare" href="#">ADD TO COMPARE</a>
+                                <div data-role="add-to-links" class="actions-secondary"<?= strpos($pos, $viewMode . '-secondary') ? $position : '' ?>>
+                                    <?php if ($addToBlock = $block->getChildBlock('addto')): ?>
+                                        <?= $addToBlock->setProduct($_product)->getChildHtml() ?>
+                                    <?php endif; ?>
+                                </div>
                             </div>
                             <div class="mob-cart-outer">
                             <button class="action tocart primary btn--ys">
                                 <span>ADD TO CART</span>
                             </button>
-                            <a CLASS="add-to-compare" href="#">ADD TO COMPARE</a>
+                            <a class="add-to-compare" href="#">ADD TO COMPARE</a>
                         </div>
                         <a href="#" class="action todowishlist"><i class="fa">&#xf08a;</i></i></a>
                     
@@ -317,6 +314,39 @@ $ajaxurl =  $block->getBaseUrl(). '/actn/actonform/index';
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+  .rating-summary .rating-result > span:before {
+    
+    color: #a40033 !important;
+
+}
+
+
+.swatch-attribute.size .swatch-option, .swatch-attribute.manufacturer .swatch-option {
+    background: #ffffff;
+    color: #070707;
+}
+
+
+ .swatch-attribute-options {
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 5px;
+}
+
+.bundle-options-container .block-bundle-summary .product-addto-links > .action, .product-item-actions .actions-secondary > .action, .product-social-links .action.tocompare, .wishlist.split.button > .action.split, .product-social-links .action.mailto.friend, .product-social-links .action.towishlist, .block-bundle-summary .action.towishlist, .product-item .action.towishlist, .table-comparison .action.towishlist {
+    color: #666666;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    display: none !important;
+    text-decoration: none;
+}
+
+
 </style>
 
 
