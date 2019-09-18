@@ -775,7 +775,7 @@ a:hover{ color:#929e1e; text-decoration:none;}
 .catalog-category-view .page-layout-2columns-left .column.main{margin-top:50px;}
 /* Added by guru 16-09-2019 */
 .page-title-wrapper {   padding: 1px 23px;text-align: center;font-size: 35px;text-transform: uppercase; }
-.product.photo.product-item-photo img { height: 175px !important; }
+/* .product.photo.product-item-photo img { height: 175px !important; } */
 .page-products .products-grid .product-item:nth-child(3n + 1) { margin-left: 0% !important; }
 .page-products .products-grid .product-item:nth-child(4n + 1) { margin-left: 0% !important; }
 .page-products .products-grid .product-item {   margin-left: 0% !important; }
@@ -783,6 +783,9 @@ a:hover{ color:#929e1e; text-decoration:none;}
 		overflow: hidden;
 }
 .product.details.product-item-details { min-height: 167px; }
+.rating-summary .rating-result {
+    z-index: -1 !important;
+}
 
 /*------responsive-------*/
 

@@ -30,10 +30,21 @@ class Toolbar extends \Magento\Catalog\Block\Product\ProductList\Toolbar
                 ->group('e.entity_id')
                 ->order('view_count ' . $this->getCurrentDirectionReverse());
         }  
-        if ($this->getCurrentOrder() == 'butterfly_pick') {
-            $collection ->addAttributeToFilter('butterfly_pick',1)->setOrder('position', 'asc');
-            $collection->load();
+        
+	if ($this->getCurrentOrder() == 'butterfly_pick') {
+             $collection ->addAttributeToFilter('butterfly_pick',1)->setOrder('position', 'asc');
+             $collection->load();
         }
+	if ($this->getCurrentOrder() == 'consumerrating') {
+		$collection->getSelect()->joinLeft(
+		'rating_option_vote_aggregated',
+                'e.entity_id = rating_option_vote_aggregated.entity_pk_value',
+                 array('vote_count' => 'SUM(rating_option_vote_aggregated.vote_count)'))
+                ->group('e.entity_id')
+                ->order('vote_count ' . $this->getCurrentDirectionReverse());		           
+        }
+
+
         $this->_collection = $collection;
 
         $this->_collection->setCurPage($this->getCurrentPage());

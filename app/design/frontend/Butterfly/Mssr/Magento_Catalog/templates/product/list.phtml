@@ -46,13 +46,16 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
         <ol class="products list items product-items">
             <?php /** @var $_product \Magento\Catalog\Model\Product */ ?>
             <?php foreach ($_productCollection as $_product): ?>
-            <li class="item product-item">
-                <div class="">
+            <li class="item product product-item">
+                <div class="product-item-info" data-container="product-<?= /* @escapeNotVerified */ $viewMode ?>">
                 <div class="product photo product-item-photo">
                            
-                 <?php
+                    <?php
                     $productImage = $block->getImage($_product, $imageDisplayArea);
-
+                    if ($pos != null) {
+                        $position = ' style="left:' . $productImage->getWidth() . 'px;'
+                            . 'top:' . $productImage->getHeight() . 'px;"';
+                    }
                     ?>
 
                     <a  href="<?= /* @escapeNotVerified */ $_product->getProductUrl() ?>"  tabindex="-1">
@@ -295,14 +298,15 @@ $ajaxurl =  $block->getBaseUrl(). '/actn/actonform/index';
 
 <style>
 .loader {
-    border: 16px solid #f3f3f3;
+    float: right;
+    border: 7px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 10px;
-    height: 10px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
+    border-top: 7px solid #3498db;
+    width: 14px;
+    height: 14px;
+    -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-  }
+}
   
   /* Safari */
   @-webkit-keyframes spin {
