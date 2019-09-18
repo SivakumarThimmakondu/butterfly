@@ -2633,6 +2633,7 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 }
 
 /*------------compare page--------*/
+
 .product-compare-outer:after{ content:""; display:table; clear:both;}
 .compare-head{ border-bottom:1px solid #b1b1b1; padding: 34px 30px; text-align:center;}
 .compare-head .page-title-wrapper{ display:inline-block;}
@@ -2687,7 +2688,7 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
 .table-comparison .remove.product{width: 44px;height: 20px;position: absolute;top: 27px;right: 10px;}
 .table-comparison .remove.product a{background: url(../images/sprite-icon.png) no-repeat 0 -2051px;display:block;text-indent: 99px;overflow: hidden;height: 20px;background-size: 100%;}
 .product-info-outer .product-item-photo{ display:block;     text-align: center;     margin-bottom: 20px;}
-.table-comparison .product-item-name a{         text-align: center; display: block; margin-bottom: 20px; color: #000; text-decoration: none; font-family: 'LG Smart'; font-size: 14px; line-height: 20px;}
+.table-comparison .product-item-name a{         text-align: center; display: block; margin-bottom: 20px; color: #000; text-decoration: none; font-family: 'LG Smart'; font-weight: 700 !important; font-size: 14px !important; line-height: 20px;}
 .table-comparison .rating{ text-align: center;}
 .table-comparison .rating .checked{ color:#c50f42;}
 .table-comparison .price-box{ text-align:center; margin:15px 0;}
@@ -2702,16 +2703,14 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
     color: #545454;
     margin-right: 10px; }
 .table-comparison .product-item-actions form .where-to-buy:hover{ background:#c50f42; color:#fff; border-color:#c50f42;}
-.table-comparison .product-item-actions form .tocart{display: inline-block;
-    background: url(../images/sprite-icon.png) no-repeat 0 -672px;
-    width: 25px;
-    height: 20px;
-    border: 0;
-    text-indent: 99px;
-    overflow: hidden;
-    line-height: 20px;
-    background-size: 100%; outline: 0;
-    cursor: pointer;}
+.table-comparison .product-item-actions form .tocart{padding: 5px 15px;
+text-decoration: none;
+border-radius: 20px;
+font-size: 10px;
+margin-right: 10px;
+margin-right: 10px;
+display: inline-block;
+border: 0.5px solid #545454; text-transform: uppercase; box-shadow: unset !important; font-weight: unset !important; background:none !important;}
 .compare-item-info { margin: 0 30px; border-top: 1px solid #d3d3d3; padding: 10px 10px; border-bottom: 1px solid #d3d3d3; overflow: hidden;}
 .compare-title-outer h2{ color:#323232;     font-size: 25px;     margin-bottom: 10px;}
 .compare-title-outer .choice-control-outer dl{}
@@ -2846,6 +2845,10 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
     z-index: 99;
     top: 34px;
     right: 135px;}
+.table-comparison {
+    table-layout: unset !important;
+}
+
 /*.compare-pro-list.com-fixed{ position: fixed; top:0; width:100%; left:0; background:#fff; z-index: 9; }
 .table-comparison .compare-pro-list.com-fixed .rating,.table-comparison .compare-pro-list.com-fixed .price-box{ display:none;}*/
 
@@ -2892,6 +2895,8 @@ width: 34px; height: 30px; display: block; background-size: 100%; }
     .fixed-com-print.com-fixed{     top: 7px; right: 14px;     padding-right: 0;}
     .fixed-com-print.com-fixed a{ margin-right: 7px;     padding-left: 33px;}
 }
+
+
 
 
 
