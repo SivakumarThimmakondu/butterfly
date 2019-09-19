@@ -12,7 +12,8 @@
 <?php $total = $block->getItems()->getSize() ?>
 <?php if ($total): ?>
    <div class="com-print-right fixed-com-print">
-                    <a class="action email" href="#">EMAIL</a>
+
+                    <a class="action email" href="mailto:$email?body=$fixed_body">EMAIL</a>
                     <a class="action print" href="#">PRINT</a>
     </div>
         <div class="table-wrapper comparison">
@@ -73,6 +74,7 @@
                                                         <span class="fa fa-star"></span>
                                                         <span class="fa fa-star"></span>
                              </div>
+                              <?= $block->getReviewsSummaryHtml($item, 'short') ?>
                           
 
                             <?= /* @escapeNotVerified */ $block->getProductPrice($item, '-compare-list-top') ?>
@@ -106,7 +108,31 @@
                     <?php endforeach; ?>
                 </tr>
                 </tbody>
-
+                <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        <section class="compare-item-info mode-differences">
+                                            <div class="compare-title-outer">
+                                                <h2>Technical Specifications</h2>
+                                                <div class="choice-control-outer">
+                                                    <dl class="choice-control">
+                                                        <dt>Show:</dt>
+                                                        <dd class="all"><a href="#">All</a></dd>
+                                                        <dd class="clicked"><a href="#">Differences</a></dd>
+                                                        <dd class="disabled">
+                                                            <a href="#">Selection</a>
+                                                            <a class="icon" href="#">!</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="collaps-all-outre">
+                                                <span class="collaps-all">Collapse All</span>
+                                            </div>
+                                        </section>
+                                    </td>
+                                </tr>
+                  </tbody>
                 <tbody>
                 <?php foreach ($block->getAttributes() as $attribute): ?>
                     <?php $index = 0; ?>
@@ -147,6 +173,422 @@
                     <?php endif; ?>
                 <?php endforeach; ?>
                 </tbody>
+                
+                    <tbody class="pro-details-outer">
+                                <tr class="info-technical-outer">
+                                    <td colspan="4" class="catagory-main">
+                                        <div class="compare-item-info-outer">
+                                            <table class="compare-pro-details" cellspacing="0" cellpadding="0" style="width:100%;">
+                                                <tbody>
+                                                    <tr class="catagory-main-title-outer">
+                                                        <td>
+                                                            <div class="catagory-main-title">
+                                                                TVs
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="sub-catagory-outer">
+                                                        <td class="sub-catagory">
+                                                            <table class="compare-pro-sub" cellspacing="0" cellpadding="0" style="width:100%;">
+                                                                <tr>
+                                                                    <td class="sub-catagory-title-outer" colspan="4">
+                                                                        <div class="sub-catagory-title">ACCESSORIES INCLUDED</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">Power Cable</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">Remote Control Battery</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">Remote</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">User Manual</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">E- Manual</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">Quick Start Guide</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="sub-catagory-outer">
+                                                        <td class="sub-catagory">
+                                                            <table class="compare-pro-sub" cellspacing="0" cellpadding="0" style="width:100%;">
+                                                                <tr>
+                                                                    <td class="sub-catagory-title-outer" colspan="4">
+                                                                        <div class="sub-catagory-title">AUDIO</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">Bluetooth Audio Play</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">back</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">Output Power  </span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">LG Sound Sync</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">DTS Decoder</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">Dolby Atmos®</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="pro-attribute-outer">
+                                                                    <th class="cell label">
+                                                                        <div class="attribute-outer margin-left">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <input type="checkbox" name="" value=""/>
+                                                                                    <span class="attribute label">Speaker System</span>
+                                                                                </li>
+                                                                                
+                                                                            </ul>
+                                                                        </div>
+                                                                    </th>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute">
+                                                                        <div class="attribute value">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="cell product attribute ">
+                                                                        <div class="attribute value margin-right">
+                                                                            yes
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+
             </table>
         </div>
         <?php if (!$block->isRedirectToCartEnabled()) : ?>
@@ -161,3 +603,49 @@
 <?php else: ?>
     <div class="message info empty"><div><?= /* @escapeNotVerified */ __('You have no items to compare.') ?></div></div>
 <?php endif; ?>
+
+
+
+
+<script>
+jQuery(document).ready(function(){
+  jQuery(".collaps-all").click(function(){
+    jQuery(".sub-catagory-outer").toggle();
+  });
+  jQuery(".catagory-main-title").click(function(){
+    jQuery(".sub-catagory-outer").toggle();
+    jQuery(this).toggleClass("arrow-open");
+  });
+  
+  jQuery(".arrow").click(function(){
+    jQuery(".action-calculator-body").toggleClass("calculator-full");
+  });
+  
+});
+
+jQuery('body').on('click','.sub-catagory-title',function(){
+
+    jQuery(this).closest('table').toggleClass('hidden-area');
+
+})
+
+jQuery(window).scroll(function() {    
+    var scroll = jQuery(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 300) {
+        //clearHeader, not clearheader - caps H
+        jQuery(".compare-pro-list").addClass("com-fixed");
+        jQuery(".fixed-com-print").addClass("com-fixed");
+        jQuery(".compare-item-info").addClass("com-fixed");
+    }else if(scroll < 300) {
+        //clearHeader, not clearheader - caps H
+        jQuery(".compare-pro-list").removeClass("com-fixed");
+        jQuery(".fixed-com-print").removeClass("com-fixed");
+        jQuery(".compare-item-info").removeClass("com-fixed");
+    }
+}); //missing );
+
+</script>
+
+
