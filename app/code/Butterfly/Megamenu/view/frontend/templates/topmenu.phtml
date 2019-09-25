@@ -1,0 +1,79 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @var $block \Magento\Theme\Block\Html\Topmenu
+ */
+?>
+
+
+    <link rel="stylesheet" type="text/css" href="<?php echo $block->getViewFileUrl('css/cart.css')?>">
+  
+  <?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @var $block \Magento\Theme\Block\Html\Topmenu
+ */
+?>
+
+<header class="headers">
+  <div class="header-inrs">
+    <div class="menu-container">
+      <div class="menus contenedor-menu">
+        <ul class="clearfix backcolor designmenu">
+          <div class="totalmobilelog">
+            <div class="lo">
+              <a href="" ><b class="clsml"><i class="fa fa-user-plus" aria-hidden="true"></i>Login</b></a>
+            </div>
+            <div class="si">
+              <a href="" ><b class="clsml"><i class="fa fa-registered" aria-hidden="true"></i>Sign Up</b></a>
+            </div>
+          </div>
+          <?php
+          $categories = $block->getStoreCategories();
+          foreach ($categories as $category):
+          
+          ?>
+          <li><a href="<?php echo $category->getRequestPath();?>"><?php echo $category->getName(); ?></a>
+          <ul>
+            <?php
+            $subCategories = $block->getCategoryById($category->getId());
+            foreach ($subCategories->getChildrenCategories() as $subCategory):
+            ?>
+            
+            <li><a href="<?php echo $subCategory->getRequestPath();?>"><?php echo $subCategory->getName(); ?></a>
+          </li>
+          
+          <?php endforeach; ?>
+        </ul>
+        <?php endforeach; ?>
+      </li>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+</header>
+
+
+    
+

@@ -247,7 +247,57 @@ jQuery(window).scroll(function() {
 
 
 
+jQuery(document).ready(function() {
+      "use strict";
+      jQuery('.items > ul > li:has( > ul)').addClass('menu-dropdown-icon');
+      jQuery('.items > ul > li > ul:not(:has(ul))').addClass('normal-sub');
+      // $(".menus > ul").before("<a href=\"#\" class=\"menu-mobile\"><div class=\"hambu\"></div><div class=\"hambu\"></div><div class=\"hambu\"></div></a>");
+      jQuery(".menus > ul").before("<div class=\"barshw\"><a class=\"iconsclick\" onclick=\"show(this)\"><i class=\"fa fa-bars hideicon\" aria-hidden=\"true\"></i></a></div><div class=\"contentbody\"><div class=\"contentmenu\" onclick=\"stop_propogate(event)\"><div class=\"items\">"+document.querySelector('.menu-container .menus').innerHTML+"</div>");
 
+      jQuery(".menus > ul > li").hover(function(e) {
+        if (jQuery(window).width() > 943) {
+          jQuery(this).children("ul").stop(true, false).fadeToggle(150);
+          e.preventDefault();
+        }
+      });
+      jQuery(".items > ul > li").click(function() {
+        if (jQuery(window).width() <= 943) {
+          jQuery(this).children("ul").fadeToggle(150);
+        }
+      });
+      // $(".menu-mobile").click(function(e) {
+      //   $(".menus > ul").toggleClass('show-on-mobile');
+      //   e.preventDefault();
+      // });
+
+      document.querySelector('.contentmenu').style.left = - (document.querySelector('.contentmenu').clientWidth + 300) + 'px';
+    });
+
+    jQuery(window).resize(function() {
+      jQuery(".items > ul > li").children("ul").hide();
+      jQuery(".items > ul").removeClass('show-on-mobile');
+    });
+
+    function show(e){
+      var att = e.getAttribute('active');
+      if(att == undefined || att == "false"){
+        e.setAttribute('active', 'true');
+        document.querySelector('.contentmenu').style.left = "-10px";
+        setTimeout(function(){
+          document.querySelector('body').addEventListener('click', close_menu);
+        }, 100);
+      }else{
+        e.setAttribute('active', 'false');
+        document.querySelector('body').removeEventListener('click', close_menu);
+        document.querySelector('.contentmenu').style.left = - (document.querySelector('.contentmenu').clientWidth + 120) + 'px';
+      }
+    }
+    function close_menu(){
+      document.querySelector('.iconsclick').click();
+    }
+    function stop_propogate(ev){
+      ev.stopPropagation();
+    }
 
      
 
